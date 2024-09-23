@@ -8,15 +8,16 @@ const config: Config = {
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
-    url: 'https://your-docusaurus-site.example.com',
+    url: 'https://de-abreu.github.io',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
-    baseUrl: '/',
+    baseUrl: '/be-a-ba/',
 
     // GitHub pages deployment config.
     // If you aren't using GitHub pages, you don't need these.
-    organizationName: 'facebook', // Usually your GitHub org/user name.
-    projectName: 'docusaurus', // Usually your repo name.
+    organizationName: 'de-abreu', // Usually your GitHub org/user name.
+    projectName: 'be-a-ba', // Usually your repo name.
+    trailingSlash: false,
 
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
@@ -25,8 +26,8 @@ const config: Config = {
     // useful metadata like html lang. For example, if your site is Chinese, you
     // may want to replace "en" with "zh-Hans".
     i18n: {
-        defaultLocale: 'en',
-        locales: ['en'],
+        defaultLocale: 'pt-br',
+        locales: ['pt-br', 'en'],
     },
 
     presets: [
@@ -66,7 +67,7 @@ const config: Config = {
         // Replace with your project's social card
         image: 'img/docusaurus-social-card.jpg',
         navbar: {
-            title: 'My Site',
+            title: 'O Bê-á-bá do FPGA',
             logo: {
                 alt: 'My Site Logo',
                 src: 'img/logo.svg',
