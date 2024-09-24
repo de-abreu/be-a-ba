@@ -1,0 +1,42 @@
+{
+    "title": {
+        "message": "The ABCs of FPGA",
+        "description": "Practices in Building a Digital Processor"
+    },
+    "logo.alt": {
+        "message": "My Site Logo",
+        "description": "The alt text of navbar logo"
+    },
+    "item.label.Sobre": {
+        "message": "About",
+        "description": "Navbar item with label Sobre"
+    },
+    "item.label.Ambiente de Trabalho": {
+        "message": "Work Environment",
+        "description": "Navbar item with label Wor Environment"
+    },
+    "item.label.Lógica Combinacional": {
+        "message": "Combinational Logic",
+        "description": "Navbar item with label Combinational Logic"
+    },
+    "item.label.Processador Digital": {
+        "message": "Digital Processor",
+        "description": "Navbar item with label Digital Processor"
+    },
+    "item.label.Bibliografia": {
+        "message": "Bibliography",
+        "description": "Navbar item with label Bibliography"
+    },
+    "item.label.Blog": {
+        "message": "Blog",
+        "description": "Navbar item with label Blog"
+    },
+    "item.label.GitHub": {
+        "message": "GitHub",
+        "description": "Navbar item with label GitHub"
+    },
+    "item.label.Lógica Sequencial": {
+        "message": "Sequential Logic",
+        "description": "Navbar item with label Sequential Logic"
+    }
+}

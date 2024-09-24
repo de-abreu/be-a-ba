@@ -3,8 +3,8 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-    title: 'O Bê-á-bá da construção de um processador digital',
-    tagline: 'Práticas com FPGA',
+    title: 'O Bê-á-bá do FPGA',
+    tagline: 'Práticas na construção de um processador digital',
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
@@ -74,67 +74,49 @@ const config: Config = {
             },
             items: [
                 {
-                    type: 'docSidebar',
-                    sidebarId: 'tutorialSidebar',
-                    position: 'left',
-                    label: 'Tutorial',
+                    label: 'Sobre',
+                    to: '/docs/category/sobre'
                 },
-                { to: '/blog', label: 'Blog', position: 'left' },
                 {
-                    href: 'https://github.com/facebook/docusaurus',
+                    label: 'Ambiente de Trabalho',
+                    to: '/docs/category/ambiente-de-trabalho'
+                },
+                {
+                    label: 'Lógica Combinacional',
+                    to: '/docs/category/logica-combinacional'
+                },
+                {
+                    label: 'Lógica Sequencial',
+                    to: '/docs/category/logica-sequencial'
+                },
+                {
+                    label: 'Processador Digital',
+                    to: '/docs/category/processador-digital'
+                },
+                {
+                    label: 'Bibliografia',
+                    to: '/docs/bibliografia'
+                },
+                { to: '/blog', label: 'Blog', position: 'right' },
+                {
+                    href: 'https://github.com/de-abreu/be-a-ba',
                     label: 'GitHub',
                     position: 'right',
                 },
+                {
+                    type: 'localeDropdown',
+                    position: 'right'
+                }
             ],
         },
         footer: {
             style: 'dark',
-            links: [
-                {
-                    title: 'Docs',
-                    items: [
-                        {
-                            label: 'Tutorial',
-                            to: '/docs/intro',
-                        },
-                    ],
-                },
-                {
-                    title: 'Community',
-                    items: [
-                        {
-                            label: 'Stack Overflow',
-                            href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                        },
-                        {
-                            label: 'Discord',
-                            href: 'https://discordapp.com/invite/docusaurus',
-                        },
-                        {
-                            label: 'Twitter',
-                            href: 'https://twitter.com/docusaurus',
-                        },
-                    ],
-                },
-                {
-                    title: 'More',
-                    items: [
-                        {
-                            label: 'Blog',
-                            to: '/blog',
-                        },
-                        {
-                            label: 'GitHub',
-                            href: 'https://github.com/facebook/docusaurus',
-                        },
-                    ],
-                },
-            ],
-            copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+            copyright: `CC-BY-NC-SA ${new Date().getFullYear()}. Feito com Docusaurus.`,
         },
         prism: {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
+            additionalLanguages: ['vhdl']
         },
     } satisfies Preset.ThemeConfig,
 };

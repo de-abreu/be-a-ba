@@ -1,0 +1,50 @@
+{
+    "version.label": {
+        "message": "Next",
+        "description": "The label for version current"
+    },
+    "sidebar.tutorialSidebar.category.Sobre": {
+        "message": "About",
+        "description": "The label for category About in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.Sobre.link.generated-index.description": {
+        "message": "Descriptive text",
+        "description": "The generated-index page description for category Sobre in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.Ambiente de Trabalho": {
+        "message": "Work Environment",
+        "description": "The label for category Work Environment in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.Ambiente de Trabalho.link.generated-index.description": {
+        "message": "Getting things ready for the activities.",
+        "description": "The generated-index page description for category Work Environment in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.tutoriais": {
+        "message": "Tutorials",
+        "description": "The label for category tutoriais in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.Lógica Combinacional": {
+        "message": "Combinational logic",
+        "description": "The label for category Combinational logic in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.Lógica Combinacional.link.generated-index.description": {
+        "message": "Descriptive text.",
+        "description": "The generated-index page description for category Combinational logic in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.Lógica Sequencial": {
+        "message": "Sequential logic",
+        "description": "The label for category Sequential logic in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.Lógica Sequencial.link.generated-index.description": {
+        "message": "Descriptive text.",
+        "description": "The generated-index page description for category Sequential logic in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.O Processador digital": {
+        "message": "The Digital Processor",
+        "description": "The label for category The Digital Processor in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.O Processador digital.link.generated-index.description": {
+        "message": "Descriptive text.",
+        "description": "The generated-index page description for category The Digital Processor in sidebar tutorialSidebar"
+    }
+}
