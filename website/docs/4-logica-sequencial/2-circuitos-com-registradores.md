@@ -1,10 +1,10 @@
 ---
 title: Circuítos com Registradores
-description: Grupo 7
+description: Grupo 8
 ---
 
 
 # Circuítos com Registradores
 :::note TODO
-Grupo 7
+Grupo 8
 :::
