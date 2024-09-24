@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
                 </Translate>
             </>
         ),
-        path: '/docs/category/logica-combinacional'
+        path: '/docs/category/lógica-combinacional'
     },
     {
         title: (<><Translate>Lógica Sequencial</Translate></>),
@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
                 </Translate>
             </>
         ),
-        path: '/docs/category/logica-sequencial'
+        path: '/docs/category/lógica-sequencial'
     },
     {
         title: (<><Translate>O Processador digital</Translate></>),
@@ -46,7 +46,7 @@ const FeatureList: FeatureItem[] = [
                 </Translate>
             </>
         ),
-        path: '/docs/category/processador-digital'
+        path: '/docs/category/o-processador-digital'
     },
 ];
 

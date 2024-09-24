@@ -83,15 +83,15 @@ const config: Config = {
                 },
                 {
                     label: 'Lógica Combinacional',
-                    to: '/docs/category/logica-combinacional'
+                    to: '/docs/category/lógica-combinacional'
                 },
                 {
                     label: 'Lógica Sequencial',
-                    to: '/docs/category/logica-sequencial'
+                    to: '/docs/category/lógica-sequencial'
                 },
                 {
                     label: 'Processador Digital',
-                    to: '/docs/category/processador-digital'
+                    to: '/docs/category/o-processador-digital'
                 },
                 {
                     label: 'Bibliografia',
