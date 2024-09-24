@@ -1,6 +1,10 @@
 ---
 title: Álgebra Booleana
-description: Texto descritivo
+description: Grupo 1
 ---
 
+
 # Álgebra Booleana
+:::note
+Grupo 1
+:::

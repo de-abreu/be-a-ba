@@ -1,6 +1,11 @@
 ---
 title: ULA
-description: Unidade Lógica e Aritmética
+description: Grupo 14
 ---
 
+
 # Unidade Lógica e Aritmética (ULA)
+## Exercícios
+:::note TODO
+Grupo 14
+:::

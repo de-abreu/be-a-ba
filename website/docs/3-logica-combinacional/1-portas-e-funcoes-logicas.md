@@ -1,6 +1,12 @@
 ---
 title: Portas e Funções Lógicas
-description: Texto descritivo
+description: Grupo 3
 ---
 
+
 # Portas e Funções Lógicas
+## Exercícios
+:::note TODO
+Grupo 3
+:::
+

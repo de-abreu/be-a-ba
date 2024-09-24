@@ -1,6 +1,10 @@
 ---
 title: A tecnologia FPGA
-description: Texto descritivo
+description: Grupo 5
 ---
 
 # A tecnologia FPGA
+## Exercícios
+:::note TODO
+Grupo 5
+:::

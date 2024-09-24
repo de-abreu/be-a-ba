@@ -1,6 +1,10 @@
 ---
 title: Memória de Programa e de Dados
-description: Texto descritivo.
+description: Grupo 12
 ---
 
 # Memória de Programa e de Dados
+## Exercícios
+:::note TODO
+Grupo 12
+:::

@@ -1,7 +1,8 @@
 ---
 title: Circuítos para Operações Aritméticas
-description: As quatro operações aplicadas a números inteiros em complemento de dois.
+description: Grupo 13
 ---
+
 
 ## Soma e Subtração
 
@@ -9,3 +10,7 @@ description: As quatro operações aplicadas a números inteiros em complemento 
 
 ## Divisão
 
+## Exercícios
+:::note TODO
+Grupo 17
+:::

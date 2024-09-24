@@ -1,7 +1,8 @@
 ---
 title: Representação Numérica
-description: Texto descritivo
+description: Grupo 10
 ---
+
 
 # Representação Numérica
 
@@ -9,3 +10,6 @@ description: Texto descritivo
 ## Ponto fixo
 
 ## Ponto flutuante
+## Exercícios
+Grupo 10
+

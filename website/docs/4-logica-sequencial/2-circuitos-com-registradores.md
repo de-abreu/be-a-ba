@@ -1,6 +1,10 @@
 ---
 title: Circuítos com Registradores
-description: Texto descritivo.
+description: Grupo 7
 ---
 
+
 # Circuítos com Registradores
+:::note TODO
+Grupo 7
+:::

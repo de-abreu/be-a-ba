@@ -1,10 +1,15 @@
 ---
 title: Memória Digital
-description: Texto descritivo.
+description: Grupo 9
 ---
+
 
 # Memória Digital
 ## Latches
 ## Flip-Flops
 
 ## Registradores
+## Exercícios
+:::note TODO
+Grupo 9
+:::
