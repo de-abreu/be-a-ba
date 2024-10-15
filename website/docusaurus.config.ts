@@ -116,7 +116,7 @@ const config: Config = {
         prism: {
             theme: prismThemes.github,
             darkTheme: prismThemes.dracula,
-            additionalLanguages: ['vhdl']
+            additionalLanguages: ['vhdl', 'makefile']
         },
     } satisfies Preset.ThemeConfig,
 };
