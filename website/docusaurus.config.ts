@@ -39,7 +39,7 @@ const config: Config = {
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        'https://github.com/de-abreu/be-a-ba/tree/main/website',
+                        'https://github.com/de-abreu/be-a-ba/edit/main/website/',
                 },
                 blog: {
                     showReadingTime: true,
@@ -50,7 +50,7 @@ const config: Config = {
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        'https://github.com/de-abreu/be-a-ba/tree/main/website',
+                        'https://github.com/de-abreu/be-a-ba/edit/main/website/',
                     // Useful options to enforce blogging best practices
                     onInlineTags: 'warn',
                     onInlineAuthors: 'warn',
