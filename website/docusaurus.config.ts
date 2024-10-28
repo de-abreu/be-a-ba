@@ -2,6 +2,9 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
+
 const config: Config = {
     title: 'O Bê-á-bá do FPGA',
     tagline: 'Práticas na construção de um processador digital',
@@ -40,6 +43,8 @@ const config: Config = {
                     // Remove this to remove the "edit this page" links.
                     editUrl:
                         'https://github.com/de-abreu/be-a-ba/edit/main/website/',
+                    remarkPlugins: [remarkMath],
+                    rehypePlugins: [rehypeKatex],
                 },
                 blog: {
                     showReadingTime: true,
@@ -114,6 +119,13 @@ const config: Config = {
             additionalLanguages: ['vhdl', 'makefile']
         },
     } satisfies Preset.ThemeConfig,
+
+    stylesheets: [
+        {
+            href: '/be-a-ba/katex/katex.min.css',
+            type: 'text/css',
+        },
+    ],
 };
 
 export default config;
