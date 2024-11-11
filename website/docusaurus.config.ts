@@ -30,7 +30,7 @@ const config: Config = {
     // may want to replace "en" with "zh-Hans".
     i18n: {
         defaultLocale: 'pt-br',
-        locales: ['pt-br', 'en'],
+        locales: ['pt-br'],
     },
 
     presets: [
@@ -102,10 +102,6 @@ const config: Config = {
                     href: 'https://github.com/de-abreu/be-a-ba',
                     label: 'GitHub',
                     position: 'right',
-                },
-                {
-                    type: 'localeDropdown',
-                    position: 'right'
                 }
             ],
         },
