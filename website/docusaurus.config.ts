@@ -107,7 +107,7 @@ const config: Config = {
         },
         footer: {
             style: 'dark',
-            copyright: `CC-BY-NC-SA ${new Date().getFullYear()}. Feito com Docusaurus.`,
+            copyright: `CC-BY-SA ${new Date().getFullYear()}. Feito com Docusaurus.`,
         },
         prism: {
             theme: prismThemes.github,
