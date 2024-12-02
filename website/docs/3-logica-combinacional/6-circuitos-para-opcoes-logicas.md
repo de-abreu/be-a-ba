@@ -3,16 +3,14 @@ title: Circuítos para Operações Lógicas
 description: Grupo 17
 ---
 
-# Circuitos para Operações Lógicas
+# Circuítos para Operações Lógicas
 
-### O são portas lógicas?
-Portas lógicas são circuitos digitais básicos que recebem uma ou mais entradas binárias e geram uma saída binária. Esses circuitos são representados por símbolos com entradas (ou entrada) e saída indicadas. Normalmente, as entradas aparecem à esquerda (ou no topo) e as saídas à direita (ou na parte inferior). Designers digitais geralmente usam letras do início do alfabeto para as entradas e a letra S ou Q para a saída. A relação entre entradas e saídas pode ser representada por uma tabela-verdade ou uma equação booleana.
+### O que são portas lógicas?
+Portas lógicas são circuitos digitais básicos que realizam operações lógicas, recebendo uma ou mais entradas binárias e gerando uma saída binária. Esses circuitos são representados por símbolos com entradas (ou entrada) e saída indicadas. Normalmente, as entradas aparecem à esquerda (ou no topo) e as saídas à direita (ou na parte inferior). Designers digitais geralmente usam letras do início do alfabeto para as entradas e a letra S ou Q para a saída. A relação entre entradas e saídas pode ser representada por uma tabela-verdade ou uma equação booleana.
 
 A tabela-verdade mostra as entradas à esquerda e as saídas correspondentes à direita, com uma linha para cada combinação de entradas. Já a equação booleana é uma expressão matemática usando variáveis binárias.
 
 Vejamos as principais portas lógicas e suas tabelas verdade:
-
-
 
 
 ## Porta NOT
@@ -27,7 +25,7 @@ Vejamos as principais portas lógicas e suas tabelas verdade:
     </div>
 </div>
 <div>
-    <p>A porta NOT possui uma entrada A, e uma saída S, como mostra a Figura. A saída da porta NOT é o inverso de sua entrada, exemplo: se A é FALSO (0), S é VERDADEIRO (1); se A é VERDADEIRO, S é FALSO. Essa relação é mostrada na tabela-verdade e pela equação booleana na figura. A linha sobre A na equação booleana é pronunciada como NOT, sendo lido como "S é igual a NÃO A". A porta NOT também é chamada de inversora. Outras notações para NOT incluem S = ¬A, S = ~A, e S = !A. </p>
+    <p>A porta NOT possui uma entrada A, e uma saída S, como mostra a Figura. A saída da porta NOT é o inverso de sua entrada, exemplo: se A é FALSO (0), S é VERDADEIRO (1); se A é VERDADEIRO, S é FALSO. Essa relação é mostrada na tabela-verdade e pela equação booleana na figura. A linha sobre "A" na equação booleana é pronunciada como NOT, sendo lida como "S é igual a NÃO A". A porta NOT também é chamada de inversora. Outras notações para NOT incluem S = ¬A, S = ~A, e S = !A. </p>
 </div>
 
 
@@ -59,7 +57,7 @@ Vejamos as principais portas lógicas e suas tabelas verdade:
     </div>
 </div>
 <div>
-    <p> Qualquer porta pode ter uma inversão (bola) para inverter sua operação. A porta NAND realiza a operação NOT AND, sendo FALSA a menos que ambas as entradas sejam VERDADEIRAS, ou seja, ela é o inverso da porta AND. </p>
+    <p> Qualquer porta pode incluir um símbolo de inversão (uma pequena bola) para indicar a inversão da operação. A porta NAND realiza a operação NOT AND, sendo FALSA a menos que ambas as entradas sejam VERDADEIRAS, ou seja, ela é o inverso da porta AND. </p>
 </div>
 
 
@@ -103,7 +101,7 @@ Compare a tabela verdade da porta AND com a tabela verdade da NAND
     </div>
 </div>
 <div>
-    <p> Segue a mesma lógica da porta NAND, sendo o inverso da porta OR, a porta NOR realiza a operação NOT OR, sendo VERDADEIRA se nem A e nem B forem VERDADEIROS. </p>
+    <p> A porta NOR segue a mesma lógica da porta OR, mas com uma inversão na saída, o que significa que ela gera uma saída VERDADEIRA somente quando nem A nem B forem VERDADEIROS. </p>
 </div>
 
 
@@ -125,7 +123,7 @@ Compare a tabela verdade da porta OR com a tabela verdade da NOR
     </div>
 </div>
 <div>
-    <p>A porta XOR (ou exclusiva, lida como "ex-OR") resulta em S VERDADEIRO, se A ou B, mas não ambos, forem VERDADEIROS.</p>
+    <p>A porta XOR (lida como "ou exclusiva") resulta em S VERDADEIRO, se A ou B, mas não ambos, forem VERDADEIROS.</p>
 </div>
 
 
@@ -237,6 +235,12 @@ Questão 4 -
 
 
 </details>
+
+:::info Autores
+- Gabriella Almeida (15528121)
+- Kelvin Ribeiro Silva (16302879)
+- Nicolas Amaral Santos (16304033)
+:::
 
 
 
