@@ -32,3 +32,4 @@ Em muitas aplicações, é necessário transferir dados de n bits. Isso pode ser
 </ol>
 
 :::
+Grupo:<br>Heitor Gomes de Oliveira - 15458350<br>Dante Brito Lourenço - 15447326<br>João Gabriel Pieroli da Silva - 15678578
