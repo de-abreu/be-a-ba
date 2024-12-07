@@ -489,7 +489,7 @@ Gray codes foram patenteados (U.S. Patent 2,632,058) por Frank Gray, pesquisador
 **Circuito final**
 
 <p align="center">
-  <img src="https://github.com/Matheus-Rodriguez/be-a-ba/blob/main/images/1.png" alt="Descrição da Imagem">
+  <img src="https://github.com/Matheus-Rodriguez/be-a-ba/blob/main/images/image18.png" alt="Descrição da Imagem">
 </p>
 
 
