@@ -16,6 +16,7 @@ Em muitas aplicações, é necessário transferir dados de n bits. Isso pode ser
   <li><b>Transferência Paralela: </b>Todos os bits são transferidos ao mesmo tempo, em um único pulso de clock, mas isso requer n fios, um para cada bit.</li>
   <li><b>Transferência Serial: </b>Alternativamente, podemos usar apenas um fio para enviar os bits um a um, usando um registrador shift. Esse método leva n ciclos de clock para transferir todos os bits, mas reduz a quantidade de fios necessários.</li>
 </ul>
+
 ## Exercícios:
 <ol><li>Considere a sequência 0101 em um registrador de 4 bits. Depois de 2 deslocamentos para a direita, qual será a sequência?</li>
 <li>Um sistema precisa transferir 16 bits de informações. Quantos fios serão necessários para fazer isso de forma paralela? e de forma serial?</li>
