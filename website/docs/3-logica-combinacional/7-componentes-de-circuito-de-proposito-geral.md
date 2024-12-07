@@ -504,4 +504,3 @@ Gray codes foram patenteados (U.S. Patent 2,632,058) por Frank Gray, pesquisador
 ## Exercícios
 :::note TODO
 Grupo 16
-:::
