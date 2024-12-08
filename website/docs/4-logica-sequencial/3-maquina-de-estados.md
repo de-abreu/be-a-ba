@@ -148,7 +148,7 @@ A diferença é que, na máquina Moore, a saída está ligada apenas ao estado �
 # Bibliografia
 - Livro - Fundamentals of Digital Logic with Verilog Design, THIRD EDITION, Stephen Brown and Zvonko Vranesic
 
-:::note Autores
+:::info Autores
 - João Gabriel Araujo de Bastos (15462633)
 - Marcelo Martins Conti (15474629)
 - Luis Guilherme Zanetti (15652750)

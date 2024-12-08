@@ -36,9 +36,9 @@ Em muitas aplicações, é necessário transferir dados de n bits. Isso pode ser
 
 4. R: Ao deslocar para a direita dividimos o numero por 2 e ao deslocar para a esquerda, multiplicamos ele por 2.
 
-::: info
-Grupo:
-Heitor Gomes de Oliveira - 15458350
-Dante Brito Lourenço - 15447326
-João Gabriel Pieroli da Silva - 15678578
+:::info Autores
+
+- Heitor Gomes de Oliveira - 15458350
+- Dante Brito Lourenço - 15447326
+- João Gabriel Pieroli da Silva - 15678578
 :::

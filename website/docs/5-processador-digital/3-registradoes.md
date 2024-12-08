@@ -92,10 +92,9 @@ b) Registradores de propósito específico são otimizados para funções espec�
 8. Vantagens: Alta velocidade e menor latência. <br/>
 Desvantagens: Consomem mais espaço no processador. Difícil de escalar para capacidades maiores devido ao custo e à complexidade.
 
-:::note TODO
-Grupo 4
-João Victor De Bortoli Prado
-Samuel Sandoval Bonachela
-Lucas Rodrigues Baptista
+:::info Autores
+- João Victor De Bortoli Prado
+- Samuel Sandoval Bonachela
+- Lucas Rodrigues Baptista
 :::
 
