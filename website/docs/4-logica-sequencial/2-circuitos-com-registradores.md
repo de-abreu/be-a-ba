@@ -27,12 +27,14 @@ Em muitas aplicações, é necessário transferir dados de n bits. Isso pode ser
 4. Algebricamente o que ocorre com um número ao deslocarmos ele para a esquerda? e para a direita?
 
 ## Respostas:
-<ol>
-  <li>R: 0001</li>
-  <li>R: paralela: 16 fios, serial: 1 fio</li>
-  <li>R: </li>
-  <li>R: Ao deslocar para a direita dividimos o numero por 2 e ao deslocar para a esquerda, multiplicamos ele por 2.</li>
-</ol>
+
+1. r: `0001`
+
+2. R: paralela: 16 fios, serial: 1 fio
+
+3. R:
+
+4. R: Ao deslocar para a direita dividimos o numero por 2 e ao deslocar para a esquerda, multiplicamos ele por 2.
 
 ::: info
 Grupo:
