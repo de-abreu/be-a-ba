@@ -4,19 +4,19 @@ description: Grupo 7
 ---
 
 # Máquina de Estados
-	
+
 Uma máquina de estados finita ou *FSM* (*Finite States Machine*) é um modelo usado para representar e controlar o comportamento de sistemas que mudam de “estado” de acordo com certos eventos.
 
 Um modelo *FSM* é composto por Estados, que representam as condições em que o sistema pode estar, eventos ou entradas, que são estímulos que fazem o sistema mudar de estado, transições que são as regras de como o sistema passa de um estado para outro, e ações, que alguns sistemas utilizam em certos estados ou transições.
 
 Um exemplo simples de um sistema que pode ser representado por meio de uma de uma *FSM* é um semáforo, no qual os elementos seriam:
 
-**Estados**: 
-- Verde. 
-- Vermelho. 
+**Estados**:
+- Verde.
+- Vermelho.
 - Amarelo.
 
-**Transições**: 
+**Transições**:
 - Verde para amarelo.
 - Amarelo para vermelho.
 - Vermelho para verde.
@@ -24,8 +24,6 @@ Um exemplo simples de um sistema que pode ser representado por meio de uma de um
 Nesse caso, o evento que estimula as transições é o tempo, com uma quantidade variável dependendo da transição.
 
 Agora, para entender melhor como as máquinas de estados podem ser representadas, vamos supor uma *FSM* que possui uma entrada **w**, uma saída **z**, e três estados, **A**, **B** e **C**, em relação ao funcionamento, o estado inicial é A, sempre que a entrada for w = 0, a máquina vai para o estado A, se o estado for A e w = 1, vai para o estado B, e se w = 1 novamente, vai para o estado C, a saída é z = 1 para o estado C e z = 0 para qualquer outro estado. Com essas informações, vamos representar a FSM por meio de um diagrama de estados, que é um diagrama que define o comportamento da máquina, onde os estados são representados por círculos e as transições por vetores direcionados, que ligam os estados. Dessa forma, o diagrama da máquina citada seria:
-
-![Imagem do diagrama da máquina de estados]()
 
 Outra maneira de representar máquinas de estados é por meio de uma tabela de estados, essa tabela mostra todas as transições possíveis entre estados para cada valor de entrada, além do valor da saída.
 
@@ -48,8 +46,6 @@ Numa máquina de estados Mealy, as saídas dependem tanto do estado atual quanto
 
 No diagrama de estados de uma máquina Mealy, as saídas são representadas nas transições entre os estados, por exemplo, a máquina mostrada na figura anteriormente pode ser representada no formato Mealy da seguinte forma:
 
-![Imagem do diagrama da máquina de estados Mealy]()
-
 Pode-se notar por meio dessa imagem que na máquina Mealy, que é possível obter a mesma FSM, mas foi preciso 1 estado a menos para representá-la. Isso mostra que dependendo da situação, cada tipo de máquina de estados possui suas vantagens.
 
 Também podemos representar a máquina Mealy na tabela de estados:
@@ -64,8 +60,6 @@ Como podemos ver, a tabela também mudou, já que agora a saída também depende
 ## Circuitos de Máquina de Estados
 Os circuitos de uma *FSM* (também chamados de circuitos sequenciais) possuem a seguinte forma geral:
 
-![Forma geral do circuito de uma máquina de estados]()
- 
 O circuito é formado por uma entrada (*input*), um circuito combinacional de lógica de transição de estados (*Next State Logic*), *Flip-Flops* que armazenam o estado atual da máquina, um circuito combinacional para determinar a saída (*Output Logic*), e por fim, uma saída (*output*). Note também que a linha tracejada é o fio que determina se a máquina é do tipo Moore ou Mealy, caso esse fio não exista, a máquina será do tipo Moore, já que a saída dependerá apenas do estado atual, caso o fio exista, a máquina será do tipo Mealy, pois nesse caso a saída depende tanto do estado quanto da entrada.
 
 Em relação ao funcionamento do circuito, primeiro temos a lógica de transição de estados, que é um circuito combinacional que recebe dois valores, a entrada do circuito *FSM* e o valor do estado atual, esse circuito é responsável por reconhecer o estado atual e decidir com base na entrada recebida qual será a transição escolhida, podendo permanecer no mesmo estado ou não. Em seguida, os *Flip-Flops* recebem o valor de saída da lógica de transição de estados, que armazena na memória o estado atual, em seguida, o valor armazenado nos *Flip-Flops* é passado para o circuito de transição de estados (a saída desse circuito só será recebida no próximo ciclo de *Clock*) e para o circuito de saída, que será responsável por determinar a saída do circuito, podendo depender da entrada ou não.
@@ -92,7 +86,7 @@ No caso de y2y1 = 00, podemos considerar Y2Y1 e z como d (don't care), pois exis
 Agora que temos as expressões, basta desenhar o circuito, isso fica como exercício para praticar.
 
 # Exercícios
-### 1) 
+### 1)
 Considere uma máquina de estados simples que controla um portão automático de garagem. Ela possui os seguintes estados:
   - Aberto: o portão está completamente aberto.
   - Fechado: o portão está completamente fechado.
@@ -147,10 +141,10 @@ Transições:
   - S5 -> S10: inserido 5 centavos.
   - S5 -> S0: inserido 10 centavos, bala liberada.
   - S10 -> S0: inserido qualquer moeda, bala liberada.
-   
+
 ### 3)
 A diferença é que, na máquina Moore, a saída está ligada apenas ao estado “Ativo”, enquanto a máquina Mealy pode gerar a saída “soando” na transição para o estado “Ativo”, dependendo da entrada e não apenas do estado atual.
-  
+
 # Bibliografia
 - Livro - Fundamentals of Digital Logic with Verilog Design, THIRD EDITION, Stephen Brown and Zvonko Vranesic
 
