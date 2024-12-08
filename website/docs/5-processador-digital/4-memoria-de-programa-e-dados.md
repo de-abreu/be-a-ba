@@ -24,10 +24,9 @@ Há diversos tipos de memórias, mas as mais comuns são:
   
 ## Memórias na CPU
 Agora que vimos os diferentes tipos de memórias, podemos classificar as memórias presentes na CPU, que citamos anteriormente.  
-### Memória de Programa
-Por ser usada para armazenar permanentemente o programa que está sendo executado e não haver necessidade de reescrevê-lo uma vez salvo, a Memória de Programa é do tipo **ROM**. 
-### Memória de Dados
-Já a Memória de Dados é usada para o armazenamento temporário de resultados imediatos e de variáveis, havendo a possibilade reescrever o conteúdo. Sendo assim, é usada a memória **RAM**.
+**Memória de Programa:** Por ser usada para armazenar permanentemente o programa que está sendo executado e não haver necessidade de reescrevê-lo uma vez salvo, a Memória de Programa é do tipo **ROM**. 
+
+**Memória de Dado:** Já a Memória de Dados é usada para o armazenamento temporário de resultados imediatos e de variáveis, havendo a possibilade reescrever o conteúdo. Sendo assim, é usada a memória **RAM**.
 
 ## É pra colocar exemplo em vhdl??
 ## Exercícios
