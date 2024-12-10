@@ -3,12 +3,6 @@ title: UC
 ---
 
 # Unidade de Controle (UC)
-## Exercícios
-:::note
-Pedro Calciolari Jardim - 11233668
-Maicon Chaves Marques - 14593530
-João Vitor Pereira Candido - 13751131
-:::
 
 O que é a Unidade de Controle?
 
@@ -42,7 +36,7 @@ Decodificar (Decode): A instrução é analisada para entender o que precisa ser
 
 Executar (Execute): A UC envia sinais para os componentes envolvidos, como a ULA, para realizar a tarefa.
 
-Exercícios
+## Exercícios
 
 Somando números
 A UC precisa somar dois números guardados em registradores. O que ela faz para:
@@ -82,3 +76,11 @@ O diagrama deve incluir flip-flops para guardar o estado atual e uma lógica que
 UC por hardware: mais rápida, menos flexível; UC microprogramada: mais flexível, mas pode ser mais lenta e mais cara de implementar.
 
 O PC passa a valer 1004 após buscar a instrução.
+
+:::info
+- Pedro Calciolari Jardim - 11233668
+- Maicon Chaves Marques - 14593530
+- João Vitor Pereira Candido - 13751131
+
+:::
+
