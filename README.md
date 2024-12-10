@@ -5,3 +5,5 @@
 Site para o projeto colaborativo de livro sobre práticas de lógica digital em placas FPGA.
 
 ### [Conheça o projeto](https://de-abreu.github.io/be-a-ba/)
+
+### [Saiba como contribuir](https://github.com/de-abreu/be-a-ba/tree/main/website)
