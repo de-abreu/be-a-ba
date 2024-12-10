@@ -64,7 +64,7 @@ Por exemplo, uma LUT de 4 entradas pode implementar qualquer função lógica de
 </details>
   
 :::info Contatos
-Lucas Mello Ciosaki - lucas.ciosaki@usp.br
-Artur Domitti Camargo - arturdomitti@usp.br
-Lucas Alves da Silva - lucas.silva2002@usp.br
+Lucas Mello Ciosaki (14591305) - lucas.ciosaki@usp.br
+Artur Domitti Camargo (15441661) - arturdomitti@usp.br
+Lucas Alves da Silva (11819553) - lucas.silva2002@usp.br
 :::
