@@ -4,11 +4,12 @@ description: Grupo 5
 ---
 
 # A tecnologia FPGA
-![alt text](https://www.intel.com.br/content/dam/www/central-libraries/us/en/images/max-10-dev-kit-top-photo.jpg.rendition.intel.web.480.270.jpg)
+![Placa FPGA Intel Max 10](https://www.intel.com.br/content/dam/www/central-libraries/us/en/images/max-10-dev-kit-top-photo.jpg.rendition.intel.web.480.270.jpg)
 ## O que é um FPGA?
 O Field-Programmable Gate Array (FPGA) é um tipo especial de circuito integrado que pode ser configurado pelo usuário após a fabricação. Essa característica faz dele uma ferramenta versátil e poderosa no design de sistemas digitais. Diferentemente de circuitos integrados de aplicação específica (ASICs), cuja funcionalidade é fixa após a fabricação, os FPGAs permitem uma reprogramação dinâmica, adaptando-se a novas funcionalidades sem a necessidade de um novo hardware.
 
 ## Arquitetura de um FPGA
+
 A estrutura básica de um FPGA é composta por três elementos principais:
 
 ### Blocos Lógicos Configuráveis (CLBs):
@@ -19,7 +20,7 @@ A estrutura básica de um FPGA é composta por três elementos principais:
   #### Flip-Flops: 
   Elementos de memória que armazenam o estado das operações.
 
-  
+  [!Elemento lógico de uma placa FPGA](../../../images/fpga_logic_element.png)
 ### Interconexões Programáveis:
   Redes de conexão que interligam os CLBs, permitindo a configuração de caminhos personalizados para o fluxo de dados. Essas interconexões oferecem alta flexibilidade e podem ser ajustadas para criar circuitos otimizados para diferentes aplicações.
 
@@ -27,6 +28,8 @@ A estrutura básica de um FPGA é composta por três elementos principais:
   Estruturas que permitem que o FPGA interaja com o mundo externo, conectando-se a sensores, atuadores ou outros sistemas digitais. Esses blocos são configuráveis para suportar  diferentes padrões de comunicação.
 
 Além desses componentes principais, FPGAs modernos frequentemente incluem recursos adicionais, como blocos de memória dedicados, multiplicadores, processadores embarcados e interfaces de comunicação de alta velocidade.
+
+[!Estrutura geral de uma placa FPGA](../../../images/fpga_general_structure.png)
 
 ## Funcionamento e Desenvolvimento
 O processo de desenvolvimento para FPGAs utiliza linguagens de descrição de hardware (HDLs), como VHDL ou Verilog. A lógica desejada é descrita em nível de comportamento ou estrutural, traduzida para uma representação lógica e então configurada no FPGA através de um fluxo de ferramentas de síntese e mapeamento.
