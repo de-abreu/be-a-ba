@@ -1,6 +1,6 @@
 ---
 title: A tecnologia FPGA
-description: Grupo 5
+description: Lucas Mello Ciosaki, Artur Domitti Camargo, Lucas Alves da Silva
 ---
 
 # A tecnologia FPGA
@@ -65,5 +65,6 @@ Por exemplo, uma LUT de 4 entradas pode implementar qualquer função lógica de
   
 :::info Contatos
 Lucas Mello Ciosaki - lucas.ciosaki@usp.br
-Artur Domitti - arturdomitti@usp.br
+Artur Domitti Camargo - arturdomitti@usp.br
+Lucas Alves da Silva - lucas.silva2002@usp.br
 :::
