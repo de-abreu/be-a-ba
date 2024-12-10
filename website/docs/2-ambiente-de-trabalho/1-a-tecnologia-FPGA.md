@@ -48,7 +48,7 @@ Uma das principais vantagens dos FPGAs é a sua capacidade de paralelização ma
 Os FPGAs são pilares fundamentais na lógica digital moderna, fornecendo uma plataforma robusta para projetos que variam desde o ensino básico até aplicações industriais avançadas. 
 
 # Exercício
-Explique qual elemento dentro de um FPGA é responsável por implementar funções lógicas, e por que ele elimina a necessidade de se usar diretamente portas lógicas como AND e OR.
+Explique qual elemento dentro de um CLB da FPGA é responsável por implementar funções lógicas, e por que ele elimina a necessidade de se usar diretamente portas lógicas como AND e OR.
 
 <details>
   <summary>Mostrar Resposta</summary>
