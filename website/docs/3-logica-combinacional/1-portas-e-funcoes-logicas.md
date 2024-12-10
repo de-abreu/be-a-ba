@@ -1,6 +1,6 @@
 ---
 title: Portas e Funções Lógicas
-description: Frederico Scheffel Oliveira, Leonardo Massuhiro Sato e Pedro Henrique Perez Dias
+description: Apresentação das principais funções lógicas e introdução à lógica combinacional
 ---
 
 
@@ -150,9 +150,8 @@ Esboço da porta:
 ![alt text](https://hermes.dio.me/assets/articles/6745fd09-934b-423b-958f-aff2d9505c94.jpg)
 4. Faça os exercícios de lógica booleana do capítulo seguinte, montando o desenho de cada circuito através das portas apresentadas nesse capítulo.
 
-::info Contato
-Grupo 3
-Frederico Scheffel Oliveira - frederico.scheffel@usp.br
-Leonardo Massuhiro Sato - leonardo.m.sato@usp.br
-Pedro Henrique Perez Dias - pedro.perez@usp.br
-::
+:::info Contato
+- Frederico Scheffel Oliveira - frederico.scheffel@usp.br
+- Leonardo Massuhiro Sato - leonardo.m.sato@usp.br
+- Pedro Henrique Perez Dias - pedro.perez@usp.br
+:::
