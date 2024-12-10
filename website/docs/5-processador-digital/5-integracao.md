@@ -39,7 +39,7 @@ A integração dos componentes requer a criação de conexões que assegurem o f
   * **Memória**: Recebe o endereço do Program Counter, envia a instrução ao Instruction Register, além de intercambiar dados com o banco de registradores e a ULA. Portanto, a memória deve ser conectada ao Program Counter, ao Instruction Register, ao banco de registradores e à ULA, estabelecendo assim um fluxo contínuo de informações.
 
 
-![Notas_241209_153906_0](https://github.com/user-attachments/assets/30b7b7dc-e4bd-4d0d-9383-9be479b7447b) 
+![Notas_241209_153906_0](https://github.com/user-attachments/assets/30b7b7dc-e4bd-4d0d-9383-9be479b7447b)
 
 ## Exercícios
 
@@ -54,13 +54,13 @@ A integração dos componentes requer a criação de conexões que assegurem o f
 ## Gabarito
 
 1)
- 
-<img width="154" alt="Captura de tela 2024-12-09 161655" src="https://github.com/user-attachments/assets/62d59460-d3f8-4eb1-b010-2b14e47bfebe">
-   
+
+<img width="154" alt="Captura de tela 2024-12-09 161655" src="https://github.com/user-attachments/assets/62d59460-d3f8-4eb1-b010-2b14e47bfebe"/>
+
 2) O Program Counter (PC) deve ser conectado à memória, pois é ele quem envia o endereço para a recuperação das instruções. A memória, por sua vez, precisa estar interligada ao banco de registradores, uma vez que é responsável por fornecer e receber valores, e o mesmo se aplica à Unidade Lógica Aritmética (ULA). O Instruction Register (IR) deve ser ligado à unidade de controle, pois é nele que a instrução atual é armazenada para posterior execução. O banco de registradores e a ULA também devem estar conectados, já que os valores das operações e seus resultados transitam várias vezes entre ambos. Finalmente, a unidade de controle deve ser conectada a todos os componentes, pois é ela que coordena suas atividades, assegurando uma execução eficiente e harmoniosa das tarefas do processador.
 
 3) A unidade de controle é responsável por coordenar e gerenciar as operações do processador, emitindo sinais de controle para os diversos componentes, como a ULA, registradores e memória, garantindo que atuem de forma sincronizada e correta. Ela interpreta as instruções, determina as ações necessárias, coordena as etapas do ciclo de execução (busca, decodificação, execução e armazenamento) e regula o fluxo de dados em conjunto com o clock. Sem a unidade de controle, o processador seria incapaz de executar instruções de maneira ordenada e eficiente.
-   
+
 4) Uma instrução é um comando expresso em números binários, que o processador decodifica, interpreta e executa com diferentes finalidades, direcionando suas ações para a realização de tarefas específicas.
 
 
