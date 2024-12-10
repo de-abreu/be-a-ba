@@ -1,4 +1,3 @@
-
 ---
 title: ULA
 
@@ -8,19 +7,19 @@ title: ULA
 
 A ULA, *Arithmetic Logic Unit* (ALU) em inglês, é um circuito digital que realiza operações matemáticas e de lógica, sendo, por isso, parte fundamental dos processadores (Sua relevância na CPU é demonstrada pela imagem abaixo). Ela é responsável por executar cálculos e operações lógicas necessários para o funcionamento de programas. A ULA é essencial para a execução de instruções aritméticas, como adição, subtração, multiplicação e divisão, bem como operações lógicas, como AND, OR, XOR e NOT.
 
-<p align="center">
+<div align="center">
     <img width="420" height="250" src="https://github.com/user-attachments/assets/b7298738-6d7c-4eda-90b7-c6e67e293c1d"/>
-</p>
+</div>
 
 ## Como funciona?
 
 A ULA opera recebendo dados da memória ou de registradores internos do processador, realizando a operação solicitada e enviando o resultado para um destino especificado. O controle do tipo de operação é realizado por sinais enviados pela Unidade de Controle (UC) do processador.
 
-Na figura abaixo, é possível ver um esquema simplificado da ULA. 
+Na figura abaixo, é possível ver um esquema simplificado da ULA.
 
-<p align="center">
+<div align="center">
     <img width="420" height="250" src="https://github.com/user-attachments/assets/bb54a992-de80-429a-ad6c-59296189d575"/>
-</p>
+</div>
 
 - **A** e **B** representam os barramentos de entrada, ou seja, as informações (operandos) que serão manipuladas pela ULA.
 - **S** é o barramento de controle, usado para selecionar qual operação lógica ou aritmética será realizada.
