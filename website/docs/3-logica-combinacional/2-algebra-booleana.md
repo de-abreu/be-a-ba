@@ -1,3 +1,5 @@
+---
+title> Algebra Booleana
 description: Grupo 1
 ---
 
@@ -5,14 +7,10 @@ description: Grupo 1
 ## O que é?
 Primeiramente, é preciso entender a principal diferença entre a álgebra convencional e a algebra booleana, que é o fato de que a álgebra booleana pode assumir somente dois valores, sendo eles: 0 ou 1, sendo que esses valores não representam realmente valores numéricos, mas o estado do nível de tensão que uma variável possui, ou seja, seu **nível lógico**.
 
-# Álgebra Booleana
-:::note
-Grupo 1
-:::
 Nível Lógico
-| 0 | 1 | 
+| 0 | 1 |
 |----------|----------|
-| Falso  | Verdadeiro  | 
+| Falso  | Verdadeiro  |
 | Desligado  | Ligado |
 | Baixo | Alto |
 | Não | Sim |
@@ -75,7 +73,7 @@ Dos axiomas, têm-se os teoremas, que são regras para lidar com as variáveis. 
 ## Simplificando expressões:
 A álgebra booleana é principalmente usada para simplificar expressões booleanas. Da seguinte forma como o exemplo abaixo:
 
-a * c + b * c + a * c + b * c = a * b + a * b + a * b 
+a * c + b * c + a * c + b * c = a * b + a * b + a * b
 
 Manipulando o lado esquerdo:
 
@@ -98,11 +96,11 @@ direita = !a + !b + a * (b + !b)  usando 12(a)
 = a + !b usando 16(a)
 
 ## Diagrama de venn e  álgebra booleana:
-O diagrama de Venn, conhecido também como diagrama de Venn-Euler, é uma maneira gráfica de representar um conjunto. Representamos com uma linha fechada que não possui auto-intersecção e  os elementos do conjunto ficam no interior dessa linha. Considerando um conjunto {0, 1} da álgebra booleana, pode-se representá-la como um diagrama de Venn para facilitar o entendimento das operações. 
+O diagrama de Venn, conhecido também como diagrama de Venn-Euler, é uma maneira gráfica de representar um conjunto. Representamos com uma linha fechada que não possui auto-intersecção e  os elementos do conjunto ficam no interior dessa linha. Considerando um conjunto {0, 1} da álgebra booleana, pode-se representá-la como um diagrama de Venn para facilitar o entendimento das operações.
 
 Alguns exemplos de operações:
 
-[![exemplos de diagramas de venn](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FFigura-2-Diagramas-de-Venn-e-as-aplicaes-de-operadores-de-lgica-booleana-Fonte_fig2_315825852&psig=AOvVaw1sNDJ1xo6qXgrEZEZDoGvZ&ust=1733969234419000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLD50vPQnooDFQAAAAAdAAAAABBN)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FFigura-2-Diagramas-de-Venn-e-as-aplicaes-de-operadores-de-lgica-booleana-Fonte_fig2_315825852&psig=AOvVaw1sNDJ1xo6qXgrEZEZDoGvZ&ust=1733969234419000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLD50vPQnooDFQAAAAAdAAAAABBN))
+[![exemplos de diagramas de venn](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FFigura-2-Diagramas-de-Venn-e-as-aplicaes-de-operadores-de-lgica-booleana-Fonte_fig2_315825852&psig=AOvVaw1sNDJ1xo6qXgrEZEZDoGvZ&ust=1733969234419000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLD50vPQnooDFQAAAAAdAAAAABBN)](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.researchgate.net%2Ffigure%2FFigura-2-Diagramas-de-Venn-e-as-aplicaes-de-operadores-de-lgica-booleana-Fonte_fig2_315825852&psig=AOvVaw1sNDJ1xo6qXgrEZEZDoGvZ&ust=1733969234419000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLD50vPQnooDFQAAAAAdAAAAABBN)
 
 ## Referências:
 - FUNDAMENTALS OF DIGITAL LOGIC WITH VERILOG DESIGN, THIRD EDITION Digital Design and Computer Architecture
