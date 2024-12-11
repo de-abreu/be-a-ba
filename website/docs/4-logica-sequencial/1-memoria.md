@@ -17,15 +17,16 @@ Um **latch** é um tipo de circuito de memória simples que pode armazenar um bi
 
 - **Latch**: Tem duas entradas, **S (Set)** e **R (Reset)**. Quando a entrada **S** é ativada, o latch "guarda" o valor 1 em Qa e Qb armazena o complemento de 1 que é 0, e quando a entrada **R** é ativada, ele guarda o valor 0 em Qa e Qb armazena o complemento de 0 que é 1, já quando ambos **S (Set)** e **R (Reset)** são igual a 1, caimos em um caso indeterminado.
 
-![Latch tipo SR com portas NOR]()
+> Imagem do Latch tipo SR com portas NOR
+
 
 - **Latch SR**: Funciona de forma semelhante ao que foi descrito acima, com uma diferença que agora terá três entradas, **S (Set)**, **R (Reset)** e (**E-Clock**). Sendo o clock o sinal de controle do latch.
 
-![Latch tipo SR síncrono]()
+> Imagem do Latch tipo SR síncrono
 
 - **Latch D**: Com apenas uma entrada e a entrada do sinal de controle(**E-Clock**)
 
-![Latch tipo D]()
+> Imagem do Latch tipo D
 
 ### Características Importantes
 
@@ -42,7 +43,7 @@ Um **flip-flop** é um tipo mais avançado de latch que mantém o estado até qu
 
 O **D Flip-Flop** (também conhecido como **Data Flip-Flop**) é um tipo de flip-flop muito simples e utilizado frequentemente em circuitos digitais. Ele possui uma única entrada **D** (Data), uma entrada de controle **Clock (CLK)**, e duas saídas: **Q** e **Q'** (invertida).
 
-![Flip-flop tipo D]()
+> Imagem do Flip-flop tipo D
 
 #### Tabela Verdade
 
@@ -66,7 +67,7 @@ A tabela verdade do **D Flip-Flop** é a seguinte:
 
 O **JK Flip-Flop** é uma versão aprimorada do SR Flip-Flop, que resolve o problema de condições de entrada inválidas (onde as entradas **S** e **R** são ambas ativadas). Ele possui duas entradas, **J** e **K**, e uma entrada de controle, o **Clock** (geralmente chamado de **CLK**).
 
-![Flip-flop tipo JK]()
+> Imagem do Flip-flop tipo JK
 
 #### Tabela Verdade
 
@@ -97,7 +98,7 @@ A tabela verdade do **JK Flip-Flop** é a seguinte:
 
 O **T Flip-Flop** (Toggle Flip-Flop) é uma versão simplificada do JK Flip-Flop. Ele possui uma única entrada **T**, uma entrada de controle **Clock (CLK)** e duas saídas: **Q** e **Q'** (invertida).
 
-![Flip-flop tipo T]()
+> Imagem do Flip-flop tipo T
 
 #### Tabela Verdade
 

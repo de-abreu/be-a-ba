@@ -1,5 +1,5 @@
 ---
-title> Algebra Booleana
+title: Algebra Booleana
 description: Grupo 1
 ---
 
