@@ -4,7 +4,7 @@ description: Grupo 12
 ---
 
 # Memória de Programa e de Dados
-A Memória de programa e a Memória de dados são áreas de armazenamento de informações na CPU, que se comunicam com as unidades de controle (UC) e de lógica e aritimética (ULA).   
+A Memória de Programa e a Memória de Dados são áreas de armazenamento de informações na CPU, que se comunicam com as unidades de controle (UC) e de lógica e aritimética (ULA).   
 A **Memória de Programa** é responsável por armazenar as intruções de programação, ou seja, o programa em si. Essas instruções são escritas pelo programador e definem as ações que a CPU deve executar.  
 A **Memória de Dados**, por sua vez, armazena os valores de variáveis utilizadas pelo programa. Ambos os valores de memória são posteriormente armazenados em registradores para o uso da CPU.
 
@@ -12,6 +12,7 @@ A **Memória de Dados**, por sua vez, armazena os valores de variáveis utilizad
 
 
 ## Tipos de Memórias
+![sram-and-dram (1)](https://github.com/user-attachments/assets/db441e8a-755f-4dd6-a81e-27e0ecf0510a)  
 Há diversos tipos de memórias, mas as mais comuns são:
   ### Memória RAM (Random Access Memory)  
   É uma memória volátil, ou seja, perde o seu conteúdo uma vez que o sistema é desligado, por isso é necessário realizar o backup para evitar perda de dados. Por outro lado, ela permite escrita e leitura de forma eficiente e é a memória principal do computador.  
@@ -20,8 +21,6 @@ Há diversos tipos de memórias, mas as mais comuns são:
   É necessário que os valores armazenados sejam atualizados (reescritos) periodicamente e após ser lido. Isso acontece porque os valores de bits são armazenados em um capacitor e, portanto, seu vazamento de carga (aos poucos, com o tempo, ou após uma leitura) afeta o valor armazenado.  
   #### SRAM (Static RAM)  
   Ao contrário da DRAM, os valores armazenados permanecem guardados de forma estática na memória, sem a necessidade de atualizar os valores dinamicamente. Isso ocorre porque, nesse caso, os valores são armazenados utilizando flip-flops.  
-![sram-and-dram (1)](https://github.com/user-attachments/assets/db441e8a-755f-4dd6-a81e-27e0ecf0510a)
-
     
   ### Memória ROM (Read Only Memory)
   É uma memória não volátil, ou seja, retém os dados mesmo que o sistema seja desligado. Ela permite leitura rápida, mas não permite escrita, com exceção de alguns tipos.
@@ -57,7 +56,7 @@ Em VHDL, a memória pode ser declarada utilizando arrays ou tipos personalizados
 **Descrição Estrutural:** Detalha a estrutura interna da memória, mais focada em como esta é construída a nível de hardware, com suas portas lógicas e blocos auxiliares.  
 **Descrição Sintética:** Detalha como é o fluxo de dados dentro do componente.  
 
-### Exemplos de implementação em VHDL com diferentes abordagens  
+### Exemplos com Diferentes Abordagens  
 
 **Abordagem comportamental**  
 ``` vhdl
