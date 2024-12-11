@@ -10,6 +10,8 @@ description: Grupo 9
 
 ## Registradores
 ## Exercícios
-:::note TODO
-Grupo 9
+:::note AUTORES
+Luis Henrique 15577760
+Gabriel de Araujo 14571376
+Gabriel Demba 15618344
 :::
