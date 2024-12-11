@@ -1,6 +1,6 @@
 ---
 title: Portas e Funções Lógicas
-description: Apresentação das principais funções lógicas e introdução à lógica combinacional
+description: Uma introdução à lógica combinacional pela apresentação das principais funções lógicas
 ---
 
 
@@ -59,7 +59,7 @@ Esboço da porta:
 ![alt text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl_9DhBPYmCY6s3S5A-FfMOf56omd3UNoiuw&s)
 
 Observações:
-- É possível representar a porta NOT colocando um traço em cima da variável que se deseja negar. Exemplo: 
+- É possível representar a porta NOT colocando um traço em cima da variável que se deseja negar. Exemplo:
 
 ### XOR
 A porta XOR representa um "ou exclusivo". Desta forma, supondo duas entradas x e y e uma saída z, para a porta retornar verdadeiro, ou z = 1, é necessário que x seja diferente de y, logo quando x = y = 1 ou x = y = 0 z retorna falso, ou z = 0.
