@@ -626,7 +626,7 @@ allowFullScreen></iframe>
 
 3. Perceba que para cada m_n (mintermo n) a saída w_n (saída w n) está ativada, ou seja, possui valor 1. Com isso, basta identificar quais entradas (y2, y1, y0) associam-se aos mintermos desejados (m0, m1, m2, m4, m5, m7). Considerando que cada entrada somente possuirá somente uma saída 1, utiliza-se a porta OR ligada aos mintermos de interesse.
 
-![Descrição da Imagem](https://github.com/Matheus-Rodriguez/be-a-ba/blob/main/images/5.png)
+![Descrição da Imagem](https://github.com/user-attachments/assets/583d8f21-7f89-4813-b692-0bf1b92059d6)
 
 5- Semelhante ao exercício 4
 
