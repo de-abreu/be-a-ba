@@ -2,73 +2,64 @@
 Title: Circuitos com registradores
 Description: O que são registradores, tipos de registradores e aplicações.
 ---
-# Circuitos com Registradores  
+# Circuitos com Registradores
 
-## O que são Registradores?  
+## O que são Registradores?
 
-Registradores são componentes fundamentais na lógica digital, usados para armazenar temporariamente um conjunto de bits. Eles são formados por um agrupamento de flip-flops, geralmente do tipo D (Data), que permitem o armazenamento de **n** bits de dados simultaneamente.  
+Registradores são componentes fundamentais na lógica digital, usados para armazenar temporariamente um conjunto de bits. Eles são formados por um agrupamento de flip-flops, geralmente do tipo D (Data), que permitem o armazenamento de **n** bits de dados simultaneamente.
 
-### Relembrando o Flip-Flop Tipo D  
+### Relembrando o Flip-Flop Tipo D
 
-Antes de explorarmos o funcionamento de registradores, é importante relembrar a respeito do Flip-Flop do tipo D. Este componente armazena o valor presente na entrada de dados (**D**) na borda ativa do sinal de clock, mantendo o dado armazenado até que ocorra a próxima borda.  
+Antes de explorarmos o funcionamento de registradores, é importante relembrar a respeito do Flip-Flop do tipo D. Este componente armazena o valor presente na entrada de dados (**D**) na borda ativa do sinal de clock, mantendo o dado armazenado até que ocorra a próxima borda.
 
-#### Funcionamento  
-1. **Bordas de subida e descida do clock:**  
-   - O flip-flop tipo D opera na transição do sinal de clock. Ele pode operar na borda de subida (0 → 1), sendo chamado de <i>positive-edge-trggered</i> ou, quando funciona na borda de descida (1 → 0), é chamado de <i>negative-edge-triggered</i>.
+#### Funcionamento
+1. **Bordas de subida e descida do clock:**
+   - O flip-flop tipo D opera na transição do sinal de clock. Ele pode operar na borda de subida (0 → 1), sendo chamado de _positive-edge-trggered_ ou, quando funciona na borda de descida (1 → 0), é chamado de _negative-edge-triggered_.
 
-   <br><br>
-   <p align="center">
-      <img src="https://d2nchlq0f2u6vy.cloudfront.net/20/03/15/60ffc0fe98872100c981d6629540ce2d/dac6a03b9dddc5699e3b08aedf793faa/image_scan.png">
-    <p align="center" style="color : gray">Flip-flop do tipo D com de borda de descida</p><br>
+![](https://d2nchlq0f2u6vy.cloudfront.net/20/03/15/60ffc0fe98872100c981d6629540ce2d/dac6a03b9dddc5699e3b08aedf793faa/image_scan.png)
+> Flip-flop do tipo D com de borda de descida
 
-    <p align="center">
-      <img src="https://gotolasopa900.weebly.com/uploads/1/2/5/5/125523448/169554668.gif">
-    <p align="center" style="color : gray">Flip-flop do tipo D com clear e preset com borda de subida</p>
+![](https://gotolasopa900.weebly.com/uploads/1/2/5/5/125523448/169554668.gif)
+> Flip-flop do tipo D com clear e preset com borda de subida
 
-2. **Gráfico de Tempo:**  
-   O diagrama de tempo mostra a relação entre o clock, entradas e saídas ao longo do tempo.<br><br>
+2. **Gráfico de Tempo:**
+   O diagrama de tempo mostra a relação entre o clock, entradas e saídas ao longo do tempo.
 
-   <p align="center">
-      <img src="https://www.build-electronic-circuits.com/wp-content/uploads/2022/11/clock-4-500x312.png">
-    <p align="center" style="color : gray">Gráfico de tempo do flip flop D com borda de subida</p>
-    </p>
+![](https://www.build-electronic-circuits.com/wp-content/uploads/2022/11/clock-4-500x312.png)
+> Gráfico de tempo do flip flop D com borda de subida
 
 ### Registradores: Nada mais do que vários Flip-Flops
 
-Um registrador é, essencialmente, um conjunto de flip-flops que, diferentemente dos flip-flops, estão organizados de modo a armazenar múltiplos bits de dados simultaneamente. Isso é feito em resposta às bordas do clock. Para um maior controle sobre isso, é comum que os registradores tenham um <i>enable</i> para ativar o registro.
+Um registrador é, essencialmente, um conjunto de flip-flops que, diferentemente dos flip-flops, estão organizados de modo a armazenar múltiplos bits de dados simultaneamente. Isso é feito em resposta às bordas do clock. Para um maior controle sobre isso, é comum que os registradores tenham um _enable_ para ativar o registro.
 
 
 Os registradores, portanto, desempenham um papel crucial no design de circuitos digitais, viabilizando o armazenamento e a manipulação eficiente de dados em diversos contextos tecnológico como armazenamento de operandos e resultados algébricos, armazenamento de localizações de memória, armazenamento de sinais de controle, etc.
 
-   <p align="center">
-      <img src="https://www.newtoncbraga.com.br/images/stories/artigo2019/cur5011_0009.png">
-    <p align="center" style="color : gray">Exemplo de registrador a partir de Flip-Flops tipo D</p>
-    </p>
+![](https://www.newtoncbraga.com.br/images/stories/artigo2019/cur5011_0009.png)
+
+> Exemplo de registrador a partir de Flip-Flops tipo D
 
 
 ---
 
 ## Transferências paralela e serial:
 
-As transferências de entrada ou de saída podem ser de forma paralela ou serial. Isso depende de como os dados se comportam. Se vários dados podem ser inseridos ao mesmo tempo tempos uma entrada paralela e se temos apenas um fio para inserir vários dados temos uma entrada em série. 
+As transferências de entrada ou de saída podem ser de forma paralela ou serial. Isso depende de como os dados se comportam. Se vários dados podem ser inseridos ao mesmo tempo tempos uma entrada paralela e se temos apenas um fio para inserir vários dados temos uma entrada em série.
 
 ### Transferência paralela:
 
 Todos os bits são transferidos ao mesmo tempo. Embora esse método seja muito rápido acabamos usando muitos fios (um para cada bit).
 
-<p align="center">
-   <img src="https://www.electronics-tutorials.ws/wp-content/uploads/2018/05/sequential-seq24.gif">
-   <p style="color:gray" align="center">Registrador shift com paralel-in paralel-out</p>
-</p>
+![](https://www.electronics-tutorials.ws/wp-content/uploads/2018/05/sequential-seq24.gif)
+> Registrador shift com paralel-in paralel-out
 
 ### Transferência serial:
 
 Os bits são enviados um por vez utilizando apenas um fio economizando fios, mas levando mais tempo já que precisamos de n ciclos de clock para realizar a operação
 
-<p align="center">
-   <img src="https://www.electronics-tutorials.ws/wp-content/uploads/2018/05/sequential-seq22.gif">
-   <p style="color:gray" align="center">Registrador shift com serial-in serial-out</p>
-</p>
+![](https://www.electronics-tutorials.ws/wp-content/uploads/2018/05/sequential-seq22.gif)
+
+> Registrador shift com serial-in serial-out
 
 ### Resumo e comparação:
 
@@ -84,15 +75,14 @@ A figura (a) exibe um exemplo de registrador shift formado por 4 flip-flops do t
 
 Os registradores shift movem os bits armazenados para a esquerda ou direita. Esse deslocamento ocorre de forma sincronizada com o clock, transferindo o valor de cada flip-flop para o anterior ou próximo. Esse comportamento é útil em operações como multiplicação e divisão por potências de 2.
 
- <p align="center">
-      <img src="https://www.electricalelibrary.com/wp-content/uploads/2021/02/shift_register.jpg">
-    <p align="center" style="color : gray">(a) Exemplo de um Registrador shift de 4 bits</p>
-</p>
+![](https://www.electricalelibrary.com/wp-content/uploads/2021/02/shift_register.jpg)
+
+> Exemplo de um Registrador shift de 4 bits
 
 ### Tipos de shift:
-Pensando em números que ficam armazenas em binário nos registradores, os registradores de shift são alternativas viaǘeis para fazer operações simples de divisão e multiplicação em potências de dois.
+Pensando em números que ficam armazenas em binário nos registradores, os registradores de shift são alternativas viáveis para fazer operações simples de divisão e multiplicação em potências de dois.
 - **Shift para a Esquerda:** multiplica o número por 2.
-- **Shift para a Direita:** divide o número por 2. 
+- **Shift para a Direita:** divide o número por 2.
 É necessário lembrar que pode ser desejado extender o sinal, visto que o bit mais significativo será
 perdido ao deslocar os bits à esquerda, e o bit menos significativo será perdido ao deslocar o
 conteúdo à direita.
@@ -112,10 +102,9 @@ Projete o circuito necessário utilizando os seguintes componentes:
 
 **Resolução**
 
-<p align="center">
-   <img src="https://i.imgur.com/croQhCC.png">
-   <p style="color:gray" align="center">Exemplo da máquina de vendas automática.</p>
-</p>
+![](https://i.imgur.com/croQhCC.png)
+
+> Exemplo da máquina de vendas automática.
 
 A figura acima (Fundamentals of Digital Logic with Verilog Design, THIRD EDITION) apresenta um circuito possível para implementar o controle de uma máquina de vendas automática. Vamos detalhar o funcionamento:
 
@@ -175,10 +164,9 @@ Os contadores são circuitos digitais utilizados para realizar operações de in
 
 Os contadores assíncronos são uma das formas mais simples de contadores e utilizam flip-flops T devido à sua característica natural de alternar estados com os pulsos de clock. Cada flip-flop no contador é conectado em cascata:
 
-<p align="center">
-   <img src="https://i.imgur.com/c7QjcT6.png">
-   <p style="color:gray" align="center">Contador Assíncrono</p>
-</p>
+![](https://i.imgur.com/c7QjcT6.png)
+
+> Contador Assíncrono
 
 
 #### Limitações
@@ -190,33 +178,29 @@ Os contadores assíncronos são uma das formas mais simples de contadores e util
 - Os contadores assíncronos são simples, econômicos e úteis em aplicações onde atrasos cumulativos não são críticos, como em contagens de baixa velocidade. Para aplicações que exigem alta precisão ou operação em alta velocidade, contadores síncronos seriam mais apropriados.
 
 
-### Detecção de Máximo  
-- Para identificar quando o contador atinge seu valor máximo (todos os bits em 1), um **gate AND** pode ser utilizado.  
-- Essa detecção é útil, por exemplo, para concatenar vários contadores ou reiniciar a contagem após atingir o valor limite. Assim nós formamos um contador com base no módulo de |n|. 
+### Detecção de Máximo
+- Para identificar quando o contador atinge seu valor máximo (todos os bits em 1), um **gate AND** pode ser utilizado.
+- Essa detecção é útil, por exemplo, para concatenar vários contadores ou reiniciar a contagem após atingir o valor limite. Assim nós formamos um contador com base no módulo de |n|.
 
 # Contadores síncronos
 
-Os contadores assíncronos são simples, mas apresentam limitações de velocidade, especialmente quando o número de bits aumenta. Isso ocorre devido aos atrasos acumulados na propagação dos sinais no esquema de clock em cascata. Apesar de ainda haver atrasos relacionados ao tempo de propagação interno de cada flip-flop e da lógica combinacional associada, para superar essa limitação, utilizamos **contadores síncronos**, onde todos os flip-flops recebem o sinal de clock ao mesmo tempo.  
+Os contadores assíncronos são simples, mas apresentam limitações de velocidade, especialmente quando o número de bits aumenta. Isso ocorre devido aos atrasos acumulados na propagação dos sinais no esquema de clock em cascata. Apesar de ainda haver atrasos relacionados ao tempo de propagação interno de cada flip-flop e da lógica combinacional associada, para superar essa limitação, utilizamos **contadores síncronos**, onde todos os flip-flops recebem o sinal de clock ao mesmo tempo.
 
-<p align="center">
-   <img src="https://i.imgur.com/yUofqhq.png">
-   <p style="color:gray" align="center"></p>
+![](https://i.imgur.com/yUofqhq.png)
 
 Mostraremos abaixo dois tipos de contadores práticos: o contador BCD e o contador em anel.
 
 
 
-## 1. Contador BCD  
+## 1. Contador BCD
 
 O **contador BCD (Binary-Coded Decimal)** conta em decimal (0 a 9) representado em binário.
 
-<p align="center">
-   <img src="https://i.imgur.com/CiM2kE5.png">
-   <p style="color:gray" align="center"></p>
+![](https://i.imgur.com/CiM2kE5.png)
 
 - **Funcionamento**:
   - Cada dígito decimal é implementado como um contador módulo-10, a partir de lógica entre as saídas Q0 e Q3, que indicam o número 9, em binário.
-  - Após alcançar o número 9, os flip-flops são redefinidos para 0.  
+  - Após alcançar o número 9, os flip-flops são redefinidos para 0.
   - Quando o primeiro dígito (BCD₀) chega a 9, ele habilita o segundo dígito (BCD₁) para incrementar.
 
 - **Controle**:
@@ -224,19 +208,18 @@ O **contador BCD (Binary-Coded Decimal)** conta em decimal (0 a 9) representado 
   - A lógica garante que o próximo dígito só incrementa quando o anterior atinge 9.
 
 
-## 2. Ring counter  
+## 2. Ring counter
 
-O **ring counter** utiliza um registro de deslocamento circular para gerar uma sequência única de códigos.  
+O **ring counter** utiliza um registro de deslocamento circular para gerar uma sequência única de códigos.
 
-<p align="center">
-   <img src="https://i.imgur.com/jGKatqk.png">
-   <p style="color:gray" align="center">Exemplo de contador ripple (assíncrono) de 4 bits</p>
-</p>
+![](https://i.imgur.com/jGKatqk.png)
 
-- **Inicialização**:  
-  - Um sinal `Start` define o primeiro flip-flop como `1` e os demais como `0`.  
+> Exemplo de contador ripple (assíncrono) de 4 bits
 
-- **Funcionamento**:  
+- **Inicialização**:
+  - Um sinal `Start` define o primeiro flip-flop como `1` e os demais como `0`.
+
+- **Funcionamento**:
   - À medida que novos clocks acontecem, os registradores shiftam em uma posição. Por exemplo, começa em:
   `1000`, `0100`, `0010`...
 
@@ -253,13 +236,13 @@ O **ring counter** utiliza um registro de deslocamento circular para gerar uma s
 
 # Circuitos Sequenciais:
 
-Circuitos sequenciais combinam lógica combinacional com elementos de armazenamento, como flip-flops, para processar informações que dependem tanto do **passado** quanto do **presente** dos sinais de entrada.  
+Circuitos sequenciais combinam lógica combinacional com elementos de armazenamento, como flip-flops, para processar informações que dependem tanto do **passado** quanto do **presente** dos sinais de entrada.
 
 Os **registradores** são usados em circuitos sequenciais para armazear informações de estados, assim, os circuitos sequenciais dependem da entrada e dos dados armazenados nos registradores e permitem manipular dados. Em circuitos sequenciais síncronos, um sinal de clock controla a mudança de estado dos flip-flops.
 
-Existem dois tipos principais de circuitos sequenciais:  
-- **Moore:** Saídas dependem apenas do estado atual.  
-- **Mealy:** Saídas dependem do estado atual e das entradas.  
+Existem dois tipos principais de circuitos sequenciais:
+- **Moore:** Saídas dependem apenas do estado atual.
+- **Mealy:** Saídas dependem do estado atual e das entradas.
 
 Esses circuitos são fundamentais em sistemas digitais para memória e controle e trataremos dele nos próximos capítulos.
 
