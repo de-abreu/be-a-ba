@@ -15,15 +15,15 @@ A estrutura básica de um FPGA é composta por três elementos principais:
 ### Blocos Lógicos Configuráveis (CLBs):
   Esses blocos são responsáveis pela implementação de funções lógicas. Cada CLB pode ser programado para operar como diferentes tipos de portas lógicas (AND, OR, XOR, etc.) ou combinações mais complexas. Internamente, os CLBs possuem:
 
-  #### Look-Up Tables (LUTs): 
+  #### Look-Up Tables (LUTs):
   Memórias pequenas que implementam funções lógicas tabeladas.
-  #### Flip-Flops: 
+  #### Flip-Flops:
   Elementos de memória que armazenam o estado das operações.
 
 
   #### Uma imagem de um elemento lógico de uma placa FPGA:
   ![Elemento lógico de uma placa FPGA](../../../images/fpga_logic_element.png)
-  
+
   ##### Veja que ele possui um LUT, um Flip-Flop e dois multiplexadores.
 ### Interconexões Programáveis:
   Redes de conexão que interligam os CLBs, permitindo a configuração de caminhos personalizados para o fluxo de dados. Essas interconexões oferecem alta flexibilidade e podem ser ajustadas para criar circuitos otimizados para diferentes aplicações.
@@ -45,7 +45,7 @@ O processo de desenvolvimento para FPGAs utiliza linguagens de descrição de ha
 Uma das principais vantagens dos FPGAs é a sua capacidade de paralelização massiva, uma vez que diferentes partes do circuito podem operar simultaneamente, em contraste com as CPUs, que são majoritariamente sequenciais.
 
 ## Conclusão
-Os FPGAs são pilares fundamentais na lógica digital moderna, fornecendo uma plataforma robusta para projetos que variam desde o ensino básico até aplicações industriais avançadas. 
+Os FPGAs são pilares fundamentais na lógica digital moderna, fornecendo uma plataforma robusta para projetos que variam desde o ensino básico até aplicações industriais avançadas.
 
 # Exercício
 Explique qual elemento dentro de um CLB da FPGA é responsável por implementar funções lógicas, e por que ele elimina a necessidade de se usar diretamente portas lógicas como AND e OR.
@@ -53,21 +53,19 @@ Explique qual elemento dentro de um CLB da FPGA é responsável por implementar 
 <details>
   <summary>Mostrar Resposta</summary>
 
-**Elemento responsável:**  
+**Elemento responsável:**
 As LUTs (Look-Up Tables) são os elementos responsáveis por implementar funções lógicas em FPGAs.
 
-**Explicação:**  
+**Explicação:**
 As LUTs funcionam como tabelas pré-configuradas que armazenam os resultados de funções lógicas para todas as combinações possíveis das entradas. Isso elimina a necessidade de implementar diretamente portas lógicas individuais (como AND ou OR), porque qualquer função lógica pode ser representada pela configuração apropriada da LUT.
 
 Por exemplo, uma LUT de 4 entradas pode implementar qualquer função lógica de 4 variáveis ao simplesmente configurar seus valores de saída para cada combinação de entrada.
 
 </details>
-  
+
 :::info Contatos
 
-Lucas Mello Ciosaki (14591305) - lucas.ciosaki@usp.br
-
-Artur Domitti Camargo (15441661) - arturdomitti@usp.br
-
-Lucas Alves da Silva (11819553) - lucas.silva2002@usp.br
+- Lucas Mello Ciosaki (14591305) - lucas.ciosaki@usp.br
+- Artur Domitti Camargo (15441661) - arturdomitti@usp.br
+- Lucas Alves da Silva (11819553) - lucas.silva2002@usp.br
 :::
