@@ -1,12 +1,12 @@
 ---
 title: O Mapa de Karnaugh
-description: O que é um mapa de Karnaugh e como aplica-lo para resolução de tabela-verdade.
+description: O que é o Mapa de Karnaugh e como aplicá-lo na resolução de tabelas-verdade.
 ---
 
 # O Mapa de Karnaugh
 
 ### O que é um Mapa de Karnaugh?
-O mapa de Karnaugh é o método de simplificação de tabelas verdades mais humano. Além de minimizar o custo de um circuito combinacional com menos esforço mental, é mais rápido do que a simplificação por mintermo, maxtermo e DeMorgan; Consegue simplificar em apenas uma aplicação. O método consiste em plotar a tabela verdade em um outro modelo, padrão do mapa de Karnaugh, e circular os pontos mais relevantes, que podem ser tanto os aglomerados de um's ou zeros, dependendo da lógica escolhida pelo usuário. A equação das variáveis já sai com o menor custo possível dentro da lógica escolhida. Por ter menos etapas, reduz também a chance de erro, caso esteja sendo realizado sem a ajuda de softwares especializados em resolver equações pelas definições de DeMorgan.
+O mapa de Karnaugh é o método de simplificação de tabelas-verdades mais humano. Além de minimizar o custo de um circuito combinacional com menos esforço mental, é mais rápido do que a simplificação por mintermo, maxtermo e DeMorgan; Consegue simplificar em apenas uma aplicação. O método consiste em plotar a tabela verdade em um outro modelo, padrão do mapa de Karnaugh, e circular os pontos mais relevantes, que podem ser tanto os aglomerados de um's ou zeros, dependendo da lógica escolhida pelo usuário. A equação das variáveis já sai com o menor custo possível dentro da lógica escolhida. Por ter menos etapas, reduz também a chance de erro, caso esteja sendo realizado sem a ajuda de softwares especializados em resolver equações pelas definições de DeMorgan.
 
 ### Como fazer o mapa?
 
@@ -20,7 +20,7 @@ Defina o número de variáveis e o tamanho do mapa.
 - Para duas variáveis: uma grade 2×2 (4 células)
 - Para três variáveis: uma grade 2×4 (8 células)
 - Para quatro variáveis: uma grade 4×4 (16 células)
-- Para cinco variáveis: duas grades 4x4, uma com o bit mais sígnificativo igual a 0 e outra com ele igual a 1 (32 células)
+- Para cinco variáveis: duas grades 4x4, uma com o bit mais significativo igual a 0 e outra com ele igual a 1 (32 células)
 
 **3. Desenhe a grade do mapa**
 
@@ -120,7 +120,7 @@ Mapa de karnaugh:
 |---------|--- |--- | ---|---|
 | 00|      1   | 0  | 0  | 1 |
 | 01|      0   | 1  | 1  | 0 |
-| 11|      0   | 0  | 1  | 1 | 
+| 11|      0   | 0  | 1  | 1 |
 | 10|      1   | 1  |0   |1  |
 
 Expressão booleana:
