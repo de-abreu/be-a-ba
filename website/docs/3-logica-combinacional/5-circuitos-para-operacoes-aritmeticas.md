@@ -3,7 +3,7 @@ title: Circuítos para Operações Aritméticas
 description: Grupo 13
 ---
 
-
+bla bla bla
 ## Soma e Subtração
 
 ## Multiplicação
