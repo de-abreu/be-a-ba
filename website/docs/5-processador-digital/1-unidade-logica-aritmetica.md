@@ -43,7 +43,7 @@ Na figura abaixo, é possível ver um esquema simplificado da ULA.
    - Direcionam a saída apropriada (resultado lógico ou aritmético) para o barramento **R**.
 
 4. **Sinalizador de Status (Flags)**:
-   - Indica condições especiais resultantes das operações, como *overflow*, *carry*, *zero* ou *negative*. Essas informações são importantes para o controle de fluxo no processador.
+   - Indica condições especiais resultantes das operações, como *overflow* (excesso de bits), *carry* (vai-um), *zero* (resultado igual a zero) ou *negative* (resultado negativo). Essas informações são importantes para o controle de fluxo no processador.
 
 ## Importância da ULA
 
@@ -51,8 +51,8 @@ Como já mencionado, a ULA é uma das partes mais importantes da Unidade Central
 - Um somador binário na ULA é essencial para cálculos matemáticos.
 - Operações lógicas são utilizadas para decisões condicionais em algoritmos.
 
-# Exercícios
-##### Teoria
+## Exercícios
+### Teoria
 
 1. Quais são os componentes da ULA?
 
@@ -61,16 +61,17 @@ Como já mencionado, a ULA é uma das partes mais importantes da Unidade Central
 :::note Atenção
 Usaremos números de 8 bits.
 :::
-##### Operações aritméticas:
-3. Qual seria a saída no barramento **R** com essas entradas na ULA? Qual o status das flags de overflow, carry, zero e negative?
+### Operações aritméticas:
+3. Qual seria a saída no barramento **R** com essas entradas na ULA? Qual o status das flags de overflow, carry, zero e negative? (Considere 1 = ativo e 0 = desativado)
+a)
     ```
-     Operação: SOMA
+     Operação (S): SOMA
      A = 00000001
      B = 00000011
     ```
-4. Qual seria a saída no barramento **R** com essas entradas na ULA? Qual o status das flags de overflow, carry, zero e negative? (Considere A-B)
+b) (Considere A-B)
     ```
-     Operação: SUBTRAÇÃO
+     Operação (S): SUBTRAÇÃO
      A = 00000001
      B = 00000011
     ```
@@ -78,16 +79,23 @@ Usaremos números de 8 bits.
 Faça a conta com complemento de dois
 :::
 
-##### Operações lógicas:
-5. Qual seria a saída no barramento **R** com essas entradas na ULA?
+c)
     ```
-     Operação: XOR
+     Operação (S): SUBTRAÇÃO
+     A = 00000011
+     B = 00000011
+    ```
+
+### Operações lógicas:
+4. Qual seria a saída no barramento **R** com essas entradas na ULA?
+    ```
+     Operação (S): XOR
      A = 00110001
      B = 01011011
     ```
-6. Qual seria a saída no barramento **R** com essa entrada na ULA?
+5. Qual seria a saída no barramento **R** com essa entrada na ULA?
     ```
-     Operação: NOT
+     Operação (S): NOT
      A = 01011011
     ```
 
@@ -103,35 +111,43 @@ Questão 2:
 - Bit shift
 
 Questão 3:
+a)
 R: 00000100
 Overflow: 0
 Carry: 0
 Zero: 0
 Negative: 0
 
-Questão 4:
+b)
 R: 11111110 (em complemento de dois)
 Overflow: 0
 Carry: 1
 Zero: 0
 Negative: 1
 
-Questão 5:
+c)
+Overflow: 0
+Carry: 0
+Zero: 1
+Negative: 0
+
+Questão 4:
 R: 01101010
 
-Questão 6:
+Questão 5:
 R: 10100100
 
 :::note Referências
 
 https://www.icloud.com.br/20798/o-que-e-uma-unidade-logica-aritmetica
-https://pt.wikipedia.org/wiki/Unidade_l%C3%B3gica_e_aritm%C3%A9tica
+https://pt.wikipedia.org/wiki/Unidade_l%C3%B3gica_e_aritm%C3%A9tica                  
 https://www2.pcs.usp.br/~labdig/pdffiles_2011/ula.pdf
 https://www4.pucsp.br/~sdeng/ULA.pdf
+- Imagens de autoria própria
 :::
 
 :::note Autores
-Laura Fernandes Camargos - 13692334
-Sandy da Costa Dutra - 12544570
-Vitor Nishimura Vian - 5255289
+- Laura Fernandes Camargos - 13692334
+- Sandy da Costa Dutra - 12544570
+- Vitor Nishimura Vian - 5255289
 :::
