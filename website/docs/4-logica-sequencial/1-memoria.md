@@ -2,7 +2,6 @@
 title: Memória Digital
 description: Importante componente em sistemas eletrônicos e digitais, responsável por armazenar informações temporárias ou permanentes.
 ---
-
 # Memória Digital
 
 A memória digital é um componente essencial em sistemas eletrônicos e digitais, sendo responsável por armazenar informações temporárias ou permanentes. Iremos apresentar três componentes fundamentais da memória digital: **latches**, **flip-flops** e **registradores**.
@@ -17,16 +16,20 @@ Um **latch** é um tipo de circuito de memória simples que pode armazenar um bi
 
 - **Latch**: Tem duas entradas, **S (Set)** e **R (Reset)**. Quando a entrada **S** é ativada, o latch "guarda" o valor 1 em Qa e Qb armazena o complemento de 1 que é 0, e quando a entrada **R** é ativada, ele guarda o valor 0 em Qa e Qb armazena o complemento de 0 que é 1, já quando ambos **S (Set)** e **R (Reset)** são igual a 1, caimos em um caso indeterminado.
 
-> Imagem do Latch tipo SR com portas NOR
-
+<div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/2bb40981-5cf7-483e-b4af-448580cac234" alt="Imagem exemplo" width="300"/>
+</div>
 
 - **Latch SR**: Funciona de forma semelhante ao que foi descrito acima, com uma diferença que agora terá três entradas, **S (Set)**, **R (Reset)** e (**E-Clock**). Sendo o clock o sinal de controle do latch.
 
-> Imagem do Latch tipo SR síncrono
+<div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/3b52d751-b380-4992-a7a1-a298aa690cbc" alt="Imagem exemplo" width="350"/>
+</div>
 
 - **Latch D**: Com apenas uma entrada e a entrada do sinal de controle(**E-Clock**)
-
-> Imagem do Latch tipo D
+<div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/eefd9970-bbef-4eb3-ac97-8a508dc838e8" alt="Imagem exemplo" width="350"/>
+</div>
 
 ### Características Importantes
 
@@ -43,7 +46,9 @@ Um **flip-flop** é um tipo mais avançado de latch que mantém o estado até qu
 
 O **D Flip-Flop** (também conhecido como **Data Flip-Flop**) é um tipo de flip-flop muito simples e utilizado frequentemente em circuitos digitais. Ele possui uma única entrada **D** (Data), uma entrada de controle **Clock (CLK)**, e duas saídas: **Q** e **Q'** (invertida).
 
-> Imagem do Flip-flop tipo D
+<div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/499a2049-9809-4e67-a895-0357f19de791" alt="Imagem exemplo" width="350"/>
+</div>
 
 #### Tabela Verdade
 
@@ -67,7 +72,9 @@ A tabela verdade do **D Flip-Flop** é a seguinte:
 
 O **JK Flip-Flop** é uma versão aprimorada do SR Flip-Flop, que resolve o problema de condições de entrada inválidas (onde as entradas **S** e **R** são ambas ativadas). Ele possui duas entradas, **J** e **K**, e uma entrada de controle, o **Clock** (geralmente chamado de **CLK**).
 
-> Imagem do Flip-flop tipo JK
+<div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/b1ecd4f7-dfaf-44d6-b4eb-67b2274e1727" alt="Imagem exemplo" width="350"/>
+</div>
 
 #### Tabela Verdade
 
@@ -98,7 +105,9 @@ A tabela verdade do **JK Flip-Flop** é a seguinte:
 
 O **T Flip-Flop** (Toggle Flip-Flop) é uma versão simplificada do JK Flip-Flop. Ele possui uma única entrada **T**, uma entrada de controle **Clock (CLK)** e duas saídas: **Q** e **Q'** (invertida).
 
-> Imagem do Flip-flop tipo T
+<div style="text-align: center;">
+    <img src="https://github.com/user-attachments/assets/17a000b5-ae36-4298-81a5-a77e4cf7c16e" alt="Imagem exemplo" width="350"/>
+</div>
 
 #### Tabela Verdade
 
@@ -183,6 +192,12 @@ Considere um flip-flop tipo JK, que possui as entradas **J** e **K**.
 **Pergunta:**
 
 - Explique as principais diferenças entre latches, flip-flops e registradores. Cite exemplos de onde cada um seria mais apropriado em um sistema digital.
+
+### AUTORES
+
+- Luis Henrique - 15577760
+- Gabriel de Araujo - 14571376
+- Gabriel Demba - 15618344
 
 
 :::note AUTORES
