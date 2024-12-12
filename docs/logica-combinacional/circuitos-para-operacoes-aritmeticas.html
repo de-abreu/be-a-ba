@@ -9,14 +9,341 @@
 
 
 <link rel="stylesheet" href="/be-a-ba/katex/katex.min.css"><link rel="stylesheet" href="/be-a-ba/assets/css/styles.c9a4dc9b.css">
-<script src="/be-a-ba/assets/js/runtime~main.1d55f160.js" defer="defer"></script>
+<script src="/be-a-ba/assets/js/runtime~main.13ea7858.js" defer="defer"></script>
 <script src="/be-a-ba/assets/js/main.9f22ab0d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Pular para o conteúdo principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Pular para o conteúdo principal</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Alternar a barra de navegação" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/be-a-ba/"><div class="navbar__logo"><img src="/be-a-ba/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/be-a-ba/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">O Bê-á-bá do FPGA</b></a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/sobre">Sobre</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/ambiente-de-trabalho">Ambiente de Trabalho</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/lógica-combinacional">Lógica Combinacional</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/lógica-sequencial">Lógica Sequencial</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/o-processador-digital">Processador Digital</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/bibliografia">Bibliografia</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/be-a-ba/blog">Blog</a><a href="https://github.com/de-abreu/be-a-ba" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Alterar entre os modos claro e escuro (modo modo claro ativado)" aria-label="Alterar entre os modos claro e escuro (modo modo claro ativado)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volte para o topo" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/sobre">Sobre</a><button aria-label="Expandir a categoria lateral &#x27;Sobre&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/ambiente-de-trabalho">Ambiente de Trabalho</a><button aria-label="Expandir a categoria lateral &#x27;Ambiente de Trabalho&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/be-a-ba/docs/category/lógica-combinacional">Lógica Combinacional</a><button aria-label="Fechar a categoria lateral &#x27;Lógica Combinacional&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/portas-e-funcoes-logicas">Portas e Funções Lógicas</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/algebra-booleana">Álgebra Booleana</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/o-mapa-de-karnaugh">O Mapa de Karnaugh</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/representacao-numerica">Representação Numérica</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/be-a-ba/docs/logica-combinacional/circuitos-para-operacoes-aritmeticas">Circuítos para Operações Aritméticas</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/circuitos-para-opcoes-logicas">Circuítos para Operações Lógicas</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/componentes-de-circuito-de-proposito-geral">Componentes de Circuíto de Propósito Geral</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/lógica-sequencial">Lógica Sequencial</a><button aria-label="Expandir a categoria lateral &#x27;Lógica Sequencial&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/o-processador-digital">O Processador Digital</a><button aria-label="Expandir a categoria lateral &#x27;O Processador Digital&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/be-a-ba/docs/bibliografia">Bibliografia</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Página Inicial" class="breadcrumbs__link" href="/be-a-ba/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/be-a-ba/docs/category/lógica-combinacional"><span itemprop="name">Lógica Combinacional</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Circuítos para Operações Aritméticas</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Nessa página</button></div><div class="theme-doc-markdown markdown"><header><h1>Circuítos para Operações Aritméticas</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="soma-e-subtração">Soma e Subtração<a href="#soma-e-subtração" class="hash-link" aria-label="Link direto para Soma e Subtração" title="Link direto para Soma e Subtração">​</a></h2>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Pular para o conteúdo principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Pular para o conteúdo principal</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Alternar a barra de navegação" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/be-a-ba/"><div class="navbar__logo"><img src="/be-a-ba/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/be-a-ba/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">O Bê-á-bá do FPGA</b></a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/sobre">Sobre</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/ambiente-de-trabalho">Ambiente de Trabalho</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/lógica-combinacional">Lógica Combinacional</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/lógica-sequencial">Lógica Sequencial</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/o-processador-digital">Processador Digital</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/bibliografia">Bibliografia</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/be-a-ba/blog">Blog</a><a href="https://github.com/de-abreu/be-a-ba" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Alterar entre os modos claro e escuro (modo modo claro ativado)" aria-label="Alterar entre os modos claro e escuro (modo modo claro ativado)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volte para o topo" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/sobre">Sobre</a><button aria-label="Expandir a categoria lateral &#x27;Sobre&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/ambiente-de-trabalho">Ambiente de Trabalho</a><button aria-label="Expandir a categoria lateral &#x27;Ambiente de Trabalho&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/be-a-ba/docs/category/lógica-combinacional">Lógica Combinacional</a><button aria-label="Fechar a categoria lateral &#x27;Lógica Combinacional&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/portas-e-funcoes-logicas">Portas e Funções Lógicas</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/algebra-booleana">Algebra Booleana</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/o-mapa-de-karnaugh">O Mapa de Karnaugh</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/representacao-numerica">Representação Numérica</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/be-a-ba/docs/logica-combinacional/circuitos-para-operacoes-aritmeticas">Circuítos para Operações Aritméticas</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/circuitos-para-opcoes-logicas">Circuítos para Operações Lógicas</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-combinacional/componentes-de-circuito-de-proposito-geral">Componentes de Circuíto de Propósito Geral</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/lógica-sequencial">Lógica Sequencial</a><button aria-label="Expandir a categoria lateral &#x27;Lógica Sequencial&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/o-processador-digital">O Processador Digital</a><button aria-label="Expandir a categoria lateral &#x27;O Processador Digital&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/be-a-ba/docs/bibliografia">Bibliografia</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Página Inicial" class="breadcrumbs__link" href="/be-a-ba/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/be-a-ba/docs/category/lógica-combinacional"><span itemprop="name">Lógica Combinacional</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Circuítos para Operações Aritméticas</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Nessa página</button></div><div class="theme-doc-markdown markdown"><header><h1>Circuítos para Operações Aritméticas</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="soma-e-subtração">Soma e Subtração<a href="#soma-e-subtração" class="hash-link" aria-label="Link direto para Soma e Subtração" title="Link direto para Soma e Subtração">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="meio-somador">Meio Somador<a href="#meio-somador" class="hash-link" aria-label="Link direto para Meio Somador" title="Link direto para Meio Somador">​</a></h3>
+<p>O <strong>meio somador</strong> (Half-Adder) é um circuito digital básico projetado para realizar a soma de dois números binários de 1 bit cada. Ele é fundamental para operações aritméticas simples e serve como base para circuitos mais complexos, como o somador completo.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="estrutura-do-meio-somador">Estrutura do Meio Somador<a href="#estrutura-do-meio-somador" class="hash-link" aria-label="Link direto para Estrutura do Meio Somador" title="Link direto para Estrutura do Meio Somador">​</a></h4>
+<ul>
+<li>
+<p><strong>Entradas:</strong></p>
+<ul>
+<li><code>A</code>: Primeiro bit a ser somado.</li>
+<li><code>B</code>: Segundo bit a ser somado.</li>
+</ul>
+</li>
+<li>
+<p><strong>Saídas:</strong></p>
+<ul>
+<li><strong>S</strong> (soma): Representa o resultado da soma dos bits <code>A</code> e <code>B</code>, sem considerar um &quot;vai um&quot; (carry). É calculada utilizando a operação lógica <code>A ⊕ B</code> (XOR), que resulta em:<!-- -->
+<ul>
+<li><code>S = 0</code>, quando <code>A</code> e <code>B</code> são iguais.</li>
+<li><code>S = 1</code>, quando <code>A</code> e <code>B</code> são diferentes.</li>
+</ul>
+</li>
+<li><strong>Cout</strong> (carry): Indica se há um &quot;vai um&quot;, ou seja, se a soma ultrapassa 1. É calculado com <code>A ⋅ B</code> (AND), sendo:<!-- -->
+<ul>
+<li><code>Cout = 1</code>, quando <code>A = 1</code> e <code>B = 1</code>.</li>
+<li><code>Cout = 0</code> nos outros casos.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="funcionamento">Funcionamento<a href="#funcionamento" class="hash-link" aria-label="Link direto para Funcionamento" title="Link direto para Funcionamento">​</a></h4>
+<p>O meio somador realiza a soma de dois bits de forma simples:</p>
+<ul>
+<li>Se ambos os bits são <code>0</code>, a soma (<code>S</code>) é <code>0</code> e não há carry (<code>Cout</code>).</li>
+<li>Se apenas um dos bits é <code>1</code>, a soma (<code>S</code>) é <code>1</code> e <code>Cout</code> continua <code>0</code>.</li>
+<li>Quando ambos os bits são <code>1</code>, a soma (<code>S</code>) é <code>0</code> e o carry (<code>Cout</code>) é <code>1</code>.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tabela-verdade">Tabela Verdade<a href="#tabela-verdade" class="hash-link" aria-label="Link direto para Tabela Verdade" title="Link direto para Tabela Verdade">​</a></h4>
+<table><thead><tr><th style="text-align:center"><code>A</code></th><th style="text-align:center"><code>B</code></th><th style="text-align:center"><code>S</code> (Soma)</th><th style="text-align:center"><code>Cout</code> (Carry)</th></tr></thead><tbody><tr><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aplicações">Aplicações<a href="#aplicações" class="hash-link" aria-label="Link direto para Aplicações" title="Link direto para Aplicações">​</a></h4>
+<p>O meio somador é utilizado em circuitos aritméticos para somar bits individuais, como no cálculo de somas parciais em somadores de múltiplos bits. Para operações mais completas, como a soma de números binários maiores, é necessário o uso de <strong>somadores completos</strong>, que consideram o &quot;carry in&quot; de somas anteriores.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/0a081f67-cfa6-4657-b101-ea14f78e1549" alt="image" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="somador-completo">Somador Completo<a href="#somador-completo" class="hash-link" aria-label="Link direto para Somador Completo" title="Link direto para Somador Completo">​</a></h3>
+<p>O <strong>somador completo</strong> (Full-Adder) é um circuito digital capaz de somar dois números binários de 1 bit cada e considerar um &quot;carry in&quot; (Cin) vindo de uma soma anterior. Ele é fundamental para operações de soma em números binários maiores.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="estrutura-do-somador-completo">Estrutura do Somador Completo<a href="#estrutura-do-somador-completo" class="hash-link" aria-label="Link direto para Estrutura do Somador Completo" title="Link direto para Estrutura do Somador Completo">​</a></h4>
+<ul>
+<li>
+<p><strong>Entradas:</strong></p>
+<ul>
+<li><code>A</code>: Primeiro bit a ser somado.</li>
+<li><code>B</code>: Segundo bit a ser somado.</li>
+<li><code>Cin</code>: Carry in (resultado de um &quot;vai um&quot; vindo da soma anterior).</li>
+</ul>
+</li>
+<li>
+<p><strong>Saídas:</strong></p>
+<ul>
+<li><strong>S</strong> (soma): Representa o resultado da soma dos bits <code>A</code>, <code>B</code> e <code>Cin</code>. É calculada com a operação lógica:<!-- -->
+<ul>
+<li><code>S = A ⊕ B ⊕ Cin</code> (XOR).</li>
+</ul>
+</li>
+<li><strong>Cout</strong> (carry out): Indica se há um &quot;vai um&quot; gerado pela soma, calculado como:<!-- -->
+<ul>
+<li><code>Cout = (A ⋅ B) + (A ⋅ Cin) + (B ⋅ Cin)</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="funcionamento-1">Funcionamento<a href="#funcionamento-1" class="hash-link" aria-label="Link direto para Funcionamento" title="Link direto para Funcionamento">​</a></h4>
+<p>O somador completo realiza a soma considerando três valores de entrada (<code>A</code>, <code>B</code> e <code>Cin</code>):</p>
+<ul>
+<li>Se a soma dos três bits for menor que 2, <code>Cout = 0</code>.</li>
+<li>Se a soma dos três bits for maior ou igual a 2, <code>Cout = 1</code>.</li>
+<li>O bit menos significativo do resultado é representado por <code>S</code>.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tabela-verdade-1">Tabela Verdade<a href="#tabela-verdade-1" class="hash-link" aria-label="Link direto para Tabela Verdade" title="Link direto para Tabela Verdade">​</a></h4>
+<table><thead><tr><th style="text-align:center"><code>A</code></th><th style="text-align:center"><code>B</code></th><th style="text-align:center"><code>Cin</code></th><th style="text-align:center"><code>S</code> (Soma)</th><th style="text-align:center"><code>Cout</code> (Carry)</th></tr></thead><tbody><tr><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">1</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aplicações-1">Aplicações<a href="#aplicações-1" class="hash-link" aria-label="Link direto para Aplicações" title="Link direto para Aplicações">​</a></h4>
+<p>O somador completo é utilizado em circuitos de somadores de múltiplos bits, como os somadores de 4, 8 ou mais bits. Para isso, os &quot;carry out&quot; de cada somador são conectados ao &quot;carry in&quot; do próximo bit. Ele é essencial para operações em processadores e sistemas digitais que demandam cálculos binários complexos.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/8b87104d-d3d6-4bfa-a07c-46fafea0fcae" alt="image" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="meio-subtrator">Meio Subtrator<a href="#meio-subtrator" class="hash-link" aria-label="Link direto para Meio Subtrator" title="Link direto para Meio Subtrator">​</a></h3>
+<p>O <strong>meio subtrator</strong> (Half-Subtractor) é um circuito digital básico projetado para realizar a subtração de dois números binários de 1 bit. Ele é essencial para operações aritméticas simples e serve como base para circuitos subtratores mais complexos.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="estrutura-do-meio-subtrator">Estrutura do Meio Subtrator<a href="#estrutura-do-meio-subtrator" class="hash-link" aria-label="Link direto para Estrutura do Meio Subtrator" title="Link direto para Estrutura do Meio Subtrator">​</a></h4>
+<ul>
+<li>
+<p><strong>Entradas:</strong></p>
+<ul>
+<li><code>A</code>: Minuendo (valor do qual será subtraído).</li>
+<li><code>B</code>: Subtraendo (valor a ser subtraído).</li>
+</ul>
+</li>
+<li>
+<p><strong>Saídas:</strong></p>
+<ul>
+<li><strong>S</strong> (subtração): Representa o resultado da subtração dos bits <code>A</code> e <code>B</code>. É calculada com a operação lógica:<!-- -->
+<ul>
+<li><code>S = A ⊕ B</code> (XOR).</li>
+</ul>
+</li>
+<li><strong>Bout</strong> (borrow out): Indica se foi necessário &quot;emprestar&quot; um bit para realizar a subtração, calculado como:<!-- -->
+<ul>
+<li><code>Bout = ¬A ⋅ B</code> (NOT de A AND B).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="funcionamento-2">Funcionamento<a href="#funcionamento-2" class="hash-link" aria-label="Link direto para Funcionamento" title="Link direto para Funcionamento">​</a></h4>
+<p>O meio subtrator realiza a subtração de dois bits binários:</p>
+<ul>
+<li>Se <code>A</code> for maior ou igual a <code>B</code>, a subtração (<code>S</code>) reflete a diferença, e <code>Bout</code> é <code>0</code>.</li>
+<li>Se <code>B</code> for maior que <code>A</code>, o resultado (<code>S</code>) considera o empréstimo, e <code>Bout</code> será <code>1</code>.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tabela-verdade-2">Tabela Verdade<a href="#tabela-verdade-2" class="hash-link" aria-label="Link direto para Tabela Verdade" title="Link direto para Tabela Verdade">​</a></h4>
+<table><thead><tr><th style="text-align:center"><code>A</code></th><th style="text-align:center"><code>B</code></th><th style="text-align:center"><code>S</code> (Subtração)</th><th style="text-align:center"><code>Bout</code> (Borrow)</th></tr></thead><tbody><tr><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">0</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aplicações-2">Aplicações<a href="#aplicações-2" class="hash-link" aria-label="Link direto para Aplicações" title="Link direto para Aplicações">​</a></h4>
+<p>O meio subtrator é usado em circuitos que realizam subtrações simples entre dois bits individuais. No entanto, para subtrações envolvendo números binários maiores ou operações que exigem o controle de &quot;borrow in&quot;, é necessário o uso de subtratores completos.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/8f472768-6bd3-4f95-aa15-2e3f9e03c1da" alt="image" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="subtrator-completo">Subtrator Completo<a href="#subtrator-completo" class="hash-link" aria-label="Link direto para Subtrator Completo" title="Link direto para Subtrator Completo">​</a></h3>
+<p>O <strong>subtrator completo</strong> (Full-Subtractor) é um circuito digital que realiza a subtração de dois números binários de 1 bit, considerando um &quot;borrow in&quot; (Bin) proveniente de uma subtração anterior. Ele é essencial para operações de subtração em números binários maiores.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="estrutura-do-subtrator-completo">Estrutura do Subtrator Completo<a href="#estrutura-do-subtrator-completo" class="hash-link" aria-label="Link direto para Estrutura do Subtrator Completo" title="Link direto para Estrutura do Subtrator Completo">​</a></h4>
+<ul>
+<li>
+<p><strong>Entradas:</strong></p>
+<ul>
+<li><code>A</code>: Minuendo (valor do qual será subtraído).</li>
+<li><code>B</code>: Subtraendo (valor a ser subtraído).</li>
+<li><code>Bin</code>: Borrow in (empréstimo de uma subtração anterior).</li>
+</ul>
+</li>
+<li>
+<p><strong>Saídas:</strong></p>
+<ul>
+<li><strong>S</strong> (subtração): Representa o resultado da subtração de <code>A</code>, <code>B</code> e <code>Bin</code>. É calculada com a operação lógica:<!-- -->
+<ul>
+<li><code>S = A ⊕ B ⊕ Bin</code> (XOR).</li>
+</ul>
+</li>
+<li><strong>Bout</strong> (borrow out): Indica se foi necessário &quot;emprestar&quot; um bit para realizar a subtração, calculado como:<!-- -->
+<ul>
+<li><code>Bout = (¬A ⋅ B) + (¬A ⋅ Bin) + (B ⋅ Bin)</code>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="funcionamento-3">Funcionamento<a href="#funcionamento-3" class="hash-link" aria-label="Link direto para Funcionamento" title="Link direto para Funcionamento">​</a></h4>
+<p>O subtrator completo realiza a subtração considerando as três entradas (<code>A</code>, <code>B</code> e <code>Bin</code>):</p>
+<ul>
+<li>Se <code>A</code> for suficientemente grande para subtrair <code>B</code> e <code>Bin</code>, <code>Bout = 0</code>.</li>
+<li>Caso contrário, <code>Bout = 1</code>, indicando que foi necessário &quot;emprestar&quot; um bit de uma subtração mais significativa.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="tabela-verdade-3">Tabela Verdade<a href="#tabela-verdade-3" class="hash-link" aria-label="Link direto para Tabela Verdade" title="Link direto para Tabela Verdade">​</a></h4>
+<table><thead><tr><th style="text-align:center"><code>A</code></th><th style="text-align:center"><code>B</code></th><th style="text-align:center"><code>Bin</code></th><th style="text-align:center"><code>S</code> (Subtração)</th><th style="text-align:center"><code>Bout</code> (Borrow)</th></tr></thead><tbody><tr><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">1</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">0</td><td style="text-align:center">0</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">1</td><td style="text-align:center">1</td></tr></tbody></table>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="aplicações-3">Aplicações<a href="#aplicações-3" class="hash-link" aria-label="Link direto para Aplicações" title="Link direto para Aplicações">​</a></h4>
+<p>O subtrator completo é usado em circuitos que realizam subtrações entre números binários de múltiplos bits. Para isso, os &quot;borrow out&quot; de cada subtrator são conectados ao &quot;borrow in&quot; do próximo bit. Ele é amplamente utilizado em sistemas digitais e processadores para operações aritméticas mais complexas.</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/e7e7f88c-45af-4e5a-ab34-a232583a10c0" alt="image" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="multiplicação">Multiplicação<a href="#multiplicação" class="hash-link" aria-label="Link direto para Multiplicação" title="Link direto para Multiplicação">​</a></h2>
+<h1>Multiplicador Simples Usando Ripple Carry</h1>
+<p>O <strong>ripple carry</strong> pode ser utilizado para implementar um multiplicador binário básico. Este circuito é composto por portas <strong>AND</strong> para gerar os produtos parciais e somadores completos (<strong>full adders</strong>) para realizar a soma desses produtos de forma sequencial, propagando os <em>carries</em> entre os estágios.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="estrutura-do-circuito">Estrutura do Circuito<a href="#estrutura-do-circuito" class="hash-link" aria-label="Link direto para Estrutura do Circuito" title="Link direto para Estrutura do Circuito">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="entradas">Entradas:<a href="#entradas" class="hash-link" aria-label="Link direto para Entradas:" title="Link direto para Entradas:">​</a></h3>
+<ul>
+<li><strong>Multiplicando</strong>: <code>A = A3 A2 A1 A0</code> (4 bits)</li>
+<li><strong>Multiplicador</strong>: <code>B = B3 B2 B1 B0</code> (4 bits)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="saída">Saída:<a href="#saída" class="hash-link" aria-label="Link direto para Saída:" title="Link direto para Saída:">​</a></h3>
+<ul>
+<li><strong>Produto</strong>: <code>P = P7 P6 P5 P4 P3 P2 P1 P0</code> (8 bits)</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="etapas-do-processo">Etapas do Processo:<a href="#etapas-do-processo" class="hash-link" aria-label="Link direto para Etapas do Processo:" title="Link direto para Etapas do Processo:">​</a></h3>
+<ol>
+<li><strong>Geração de Produtos Parciais</strong>:<!-- -->
+<ul>
+<li>Cada bit do multiplicador (<code>B</code>) é multiplicado por cada bit do multiplicando (<code>A</code>) usando portas AND.</li>
+</ul>
+</li>
+<li><strong>Soma dos Produtos Parciais</strong>:<!-- -->
+<ul>
+<li>Os produtos parciais são somados utilizando somadores completos (<em>full adders</em>).</li>
+<li>O ripple carry é utilizado para propagar o <em>carry</em> de um estágio para o próximo, resultando no produto final.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="implementação-do-circuito">Implementação do Circuito<a href="#implementação-do-circuito" class="hash-link" aria-label="Link direto para Implementação do Circuito" title="Link direto para Implementação do Circuito">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="geração-dos-produtos-parciais">Geração dos Produtos Parciais<a href="#geração-dos-produtos-parciais" class="hash-link" aria-label="Link direto para Geração dos Produtos Parciais" title="Link direto para Geração dos Produtos Parciais">​</a></h3>
+<p>Os produtos parciais são calculados da seguinte forma:</p>
+<ul>
+<li><code>P0 = A0 AND B0</code></li>
+<li><code>P1</code> a <code>P7</code>: Calculados adicionando os produtos parciais com base na posição e no bit correspondente.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="circuito-de-soma-com-ripple-carry">Circuito de Soma com Ripple Carry<a href="#circuito-de-soma-com-ripple-carry" class="hash-link" aria-label="Link direto para Circuito de Soma com Ripple Carry" title="Link direto para Circuito de Soma com Ripple Carry">​</a></h3>
+<p>O ripple carry é usado para somar os produtos parciais. Cada estágio utiliza um <strong>full adder</strong> para combinar os bits de soma com o <em>carry</em> do estágio anterior. O atraso na propagação do <em>carry</em> ocorre sequencialmente ao longo dos estágios, até que o valor final seja calculado.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="diagrama-do-full-adder">Diagrama do Full Adder<a href="#diagrama-do-full-adder" class="hash-link" aria-label="Link direto para Diagrama do Full Adder" title="Link direto para Diagrama do Full Adder">​</a></h3>
+<p>Cada somador completo no ripple carry segue o seguinte esquema:</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/bc1bc28f-0249-4982-9174-39b36b449ed0" alt="image" class="img_ev3q"></p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="entradas-e-saídas">Entradas e Saídas:<a href="#entradas-e-saídas" class="hash-link" aria-label="Link direto para Entradas e Saídas:" title="Link direto para Entradas e Saídas:">​</a></h4>
+<ul>
+<li><strong>Entradas</strong>:<!-- -->
+<ul>
+<li><code>A</code>, <code>B</code>: Bits a serem somados.</li>
+<li><code>Cin</code>: Carry de entrada do estágio anterior.</li>
+</ul>
+</li>
+<li><strong>Saídas</strong>:<!-- -->
+<ul>
+<li><code>Sum</code>: Soma dos bits.</li>
+<li><code>Cout</code>: Carry de saída para o próximo estágio.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="diagrama-do-multiplicador-completo">Diagrama do Multiplicador Completo<a href="#diagrama-do-multiplicador-completo" class="hash-link" aria-label="Link direto para Diagrama do Multiplicador Completo" title="Link direto para Diagrama do Multiplicador Completo">​</a></h3>
+<p>O diagrama abaixo ilustra o funcionamento de um multiplicador completo usando ripple carry:</p>
+<p><img decoding="async" loading="lazy" src="https://github.com/user-attachments/assets/e82110b8-8f5d-47e8-8c32-68fd6564688d" alt="image" class="img_ev3q"></p>
+<p>Neste circuito:</p>
+<ul>
+<li>As portas <strong>AND</strong> geram os produtos parciais.</li>
+<li>Os somadores completos realizam a soma dos produtos parciais.</li>
+<li>O ripple carry conecta os somadores para propagar o carry entre os estágios.</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="exemplo-prático">Exemplo Prático<a href="#exemplo-prático" class="hash-link" aria-label="Link direto para Exemplo Prático" title="Link direto para Exemplo Prático">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="multiplicação-de-a--1010-e-b--1101">Multiplicação de <code>A = 1010</code> e <code>B = 1101</code><a href="#multiplicação-de-a--1010-e-b--1101" class="hash-link" aria-label="Link direto para multiplicação-de-a--1010-e-b--1101" title="Link direto para multiplicação-de-a--1010-e-b--1101">​</a></h3>
+<ol>
+<li>
+<p><strong>Produtos Parciais</strong>:</p>
+<ul>
+<li>Primeira linha: <code>1010 × 1 = 1010</code></li>
+<li>Segunda linha (shiftada): <code>1010 × 0 = 0000</code></li>
+<li>Terceira linha (shiftada): <code>1010 × 1 = 1010</code></li>
+<li>Quarta linha (shiftada): <code>1010 × 1 = 1010</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Soma dos Produtos Parciais</strong>:</p>
+<ul>
+<li>A soma é realizada com os somadores em ripple carry.</li>
+<li>Resultado final: <code>10011110</code> (158 em decimal).</li>
+</ul>
+</li>
+</ol>
+<hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="divisão">Divisão<a href="#divisão" class="hash-link" aria-label="Link direto para Divisão" title="Link direto para Divisão">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="divisão-binária-por-comparações-e-subtrações"><strong>Divisão binária</strong>: por comparações e subtrações<a href="#divisão-binária-por-comparações-e-subtrações" class="hash-link" aria-label="Link direto para divisão-binária-por-comparações-e-subtrações" title="Link direto para divisão-binária-por-comparações-e-subtrações">​</a></h3>
+<p>A divisão binária realiza divisões entre números inteiros, obtendo quociente e resto entre dois números. Funciona comparando dois números e subtraindo o segundo do primeiro, caso este seja menor, de modo que contar quantas vezes isso foi possível, é o quociente, enquanto o valor em que não foi possível mais dividir, é o resto.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="estrutura-do-circuito-1">Estrutura do Circuito<a href="#estrutura-do-circuito-1" class="hash-link" aria-label="Link direto para Estrutura do Circuito" title="Link direto para Estrutura do Circuito">​</a></h3>
+<ul>
+<li>
+<p><strong>Entradas:</strong></p>
+<ul>
+<li><strong>Dividendo</strong>: <code>A = An An-1 ... A1 A0</code> (n bits)</li>
+<li><strong>Divisor</strong>: <code>B = Bn Bn-1 ... B1 B0</code> (até n bits)</li>
+</ul>
+</li>
+<li>
+<p><strong>Saídas:</strong></p>
+<ul>
+<li><strong>Quociente</strong>: <code>Q = Qn Qn-1 ... Q1 Q0</code> (n bits)</li>
+<li><strong>Resto</strong>: <code>R = Rn Rn-1 ... R1 R0</code> (n bits)</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="funcionamento-4">Funcionamento<a href="#funcionamento-4" class="hash-link" aria-label="Link direto para Funcionamento" title="Link direto para Funcionamento">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="etapas">Etapas:<a href="#etapas" class="hash-link" aria-label="Link direto para Etapas:" title="Link direto para Etapas:">​</a></h4>
+<ol>
+<li>
+<p><strong>Desloque</strong> (usando circuito shift) os bits do divisor para a esquerda até o n - 1 bits, da direita para esquerda</p>
+</li>
+<li>
+<p><strong>Compare</strong> (usando circuito comparador) esse número deslocado, com o dividendo anterior (atual resto), se o número for menor ou igual, <strong>subtraia</strong> (usando circuito subtrator) obtendo um novo dividendo e adicione o bit &#x27;1&#x27; à esquerda do quociente, senão adicione o bit &#x27;0&#x27; à esquerda do quociente</p>
+</li>
+<li>
+<p><strong>Desloque</strong> o divisor 1 bit para a direita e repita o processo começando do passo 2, até chegar ao último bit do quociente</p>
+</li>
+<li>
+<p>Você tem o <strong>Quociente</strong></p>
+</li>
+<li>
+<p>O dividendo que restou, é o próprio <strong>Resto</strong></p>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exemplo-prático-1">Exemplo Prático<a href="#exemplo-prático-1" class="hash-link" aria-label="Link direto para Exemplo Prático" title="Link direto para Exemplo Prático">​</a></h3>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="divisão-de-1011-11-em-decimal-por-0011-3-em-decimal">Divisão de <code>1011</code> (11 em decimal) por <code>0011</code> (3 em decimal):<a href="#divisão-de-1011-11-em-decimal-por-0011-3-em-decimal" class="hash-link" aria-label="Link direto para divisão-de-1011-11-em-decimal-por-0011-3-em-decimal" title="Link direto para divisão-de-1011-11-em-decimal-por-0011-3-em-decimal">​</a></h4>
+<ul>
+<li>
+<p><strong>Passo 1</strong>:
+Desloca <code>0011</code>, 3 ( =  4 - 1) bits à esquerda</p>
+</li>
+<li>
+<p><strong>Passo 2</strong>:
+Compara: <code>11000</code> &gt; <code>1011</code>
+=&gt; bit 3 do quociente é <code>0</code>
+Desloca <code>11000</code>, 1 bit à direita -&gt; <code>1100</code></p>
+</li>
+<li>
+<p><strong>Passo 3</strong>:
+Compara: <code>1100</code> &gt; <code>1011</code>
+=&gt; bit 2 do quociente é <code>0</code>
+Desloca <code>1100</code>, 1 bit à direita -&gt; <code>0110</code></p>
+</li>
+<li>
+<p><strong>Passo 4</strong>:
+Compara: <code>0110</code> &lt; <code>1011</code>
+=&gt; bit 1 do quociente é <code>1</code>
+=&gt; subtrai: <code>1011 - 0110 = 0101</code>
+Desloca <code>0110</code>, 1 bit à direita -&gt; <code>0011</code></p>
+</li>
+<li>
+<p><strong>Passo 5</strong>:
+Compara: <code>0011</code> &lt; <code>1011</code>
+=&gt; bit 0 do quociente é <code>1</code> (último bit do quociente)
+=&gt; subtrai: <code>0101 - 0011 = 0010</code>
+Não é mais possível deslocar =&gt; Fim</p>
+</li>
+<li>
+<p><strong>Resultado final</strong>:</p>
+<ul>
+<li>Quociente = <code>0011</code> (3 em decimal)</li>
+<li>Resto = <code>0010</code> (2 em decimal)</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aplicações-4">Aplicações<a href="#aplicações-4" class="hash-link" aria-label="Link direto para Aplicações" title="Link direto para Aplicações">​</a></h3>
+<p>O Divisor Binário é usado em todas as áreas da computação, responsável pela base de operações como: divisões inteiras, cálculos numéricos, operações entre números de ponto flutuante. Também possibilita sistemas de criptografia e conversores de diferentes bases numéricas.</p>
+<hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="exercícios">Exercícios<a href="#exercícios" class="hash-link" aria-label="Link direto para Exercícios" title="Link direto para Exercícios">​</a></h2>
-<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>TODO</div><div class="admonitionContent_BuS1"><p>Grupo 17</p></div></div></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/de-abreu/be-a-ba/edit/main/website/docs/3-logica-combinacional/5-circuitos-para-operacoes-aritmeticas.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar essa página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Páginas de documentação"><a class="pagination-nav__link pagination-nav__link--prev" href="/be-a-ba/docs/logica-combinacional/representacao-numerica"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Representação Numérica</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/be-a-ba/docs/logica-combinacional/circuitos-para-opcoes-logicas"><div class="pagination-nav__sublabel">Próxima</div><div class="pagination-nav__label">Circuítos para Operações Lógicas</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#soma-e-subtração" class="table-of-contents__link toc-highlight">Soma e Subtração</a></li><li><a href="#multiplicação" class="table-of-contents__link toc-highlight">Multiplicação</a></li><li><a href="#divisão" class="table-of-contents__link toc-highlight">Divisão</a></li><li><a href="#exercícios" class="table-of-contents__link toc-highlight">Exercícios</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">CC-BY-SA 2024. Feito com Docusaurus.</div></div></div></footer></div>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>TODO</div><div class="admonitionContent_BuS1"><p>Grupo 17</p></div></div></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/de-abreu/be-a-ba/edit/main/website/docs/3-logica-combinacional/5-circuitos-para-operacoes-aritmeticas.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar essa página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Páginas de documentação"><a class="pagination-nav__link pagination-nav__link--prev" href="/be-a-ba/docs/logica-combinacional/representacao-numerica"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Representação Numérica</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/be-a-ba/docs/logica-combinacional/circuitos-para-opcoes-logicas"><div class="pagination-nav__sublabel">Próxima</div><div class="pagination-nav__label">Circuítos para Operações Lógicas</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#soma-e-subtração" class="table-of-contents__link toc-highlight">Soma e Subtração</a><ul><li><a href="#meio-somador" class="table-of-contents__link toc-highlight">Meio Somador</a></li><li><a href="#somador-completo" class="table-of-contents__link toc-highlight">Somador Completo</a></li><li><a href="#meio-subtrator" class="table-of-contents__link toc-highlight">Meio Subtrator</a></li><li><a href="#subtrator-completo" class="table-of-contents__link toc-highlight">Subtrator Completo</a></li></ul></li><li><a href="#multiplicação" class="table-of-contents__link toc-highlight">Multiplicação</a></li><li><a href="#estrutura-do-circuito" class="table-of-contents__link toc-highlight">Estrutura do Circuito</a><ul><li><a href="#entradas" class="table-of-contents__link toc-highlight">Entradas:</a></li><li><a href="#saída" class="table-of-contents__link toc-highlight">Saída:</a></li><li><a href="#etapas-do-processo" class="table-of-contents__link toc-highlight">Etapas do Processo:</a></li></ul></li><li><a href="#implementação-do-circuito" class="table-of-contents__link toc-highlight">Implementação do Circuito</a><ul><li><a href="#geração-dos-produtos-parciais" class="table-of-contents__link toc-highlight">Geração dos Produtos Parciais</a></li><li><a href="#circuito-de-soma-com-ripple-carry" class="table-of-contents__link toc-highlight">Circuito de Soma com Ripple Carry</a></li><li><a href="#diagrama-do-full-adder" class="table-of-contents__link toc-highlight">Diagrama do Full Adder</a></li><li><a href="#diagrama-do-multiplicador-completo" class="table-of-contents__link toc-highlight">Diagrama do Multiplicador Completo</a></li></ul></li><li><a href="#exemplo-prático" class="table-of-contents__link toc-highlight">Exemplo Prático</a><ul><li><a href="#multiplicação-de-a--1010-e-b--1101" class="table-of-contents__link toc-highlight">Multiplicação de <code>A = 1010</code> e <code>B = 1101</code></a></li></ul></li><li><a href="#divisão" class="table-of-contents__link toc-highlight">Divisão</a><ul><li><a href="#divisão-binária-por-comparações-e-subtrações" class="table-of-contents__link toc-highlight"><strong>Divisão binária</strong>: por comparações e subtrações</a></li><li><a href="#estrutura-do-circuito-1" class="table-of-contents__link toc-highlight">Estrutura do Circuito</a></li><li><a href="#funcionamento-4" class="table-of-contents__link toc-highlight">Funcionamento</a></li><li><a href="#exemplo-prático-1" class="table-of-contents__link toc-highlight">Exemplo Prático</a></li><li><a href="#aplicações-4" class="table-of-contents__link toc-highlight">Aplicações</a></li></ul></li><li><a href="#exercícios" class="table-of-contents__link toc-highlight">Exercícios</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">CC-BY-SA 2024. Feito com Docusaurus.</div></div></div></footer></div>
 </body>
 </html>

@@ -3,62 +3,260 @@
 <head>
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.3">
-<title data-rh="true">Circuítos com Registradores | O Bê-á-bá do FPGA</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://de-abreu.github.io/be-a-ba/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://de-abreu.github.io/be-a-ba/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://de-abreu.github.io/be-a-ba/docs/logica-sequencial/circuitos-com-registradores"><meta data-rh="true" property="og:locale" content="pt_br"><meta data-rh="true" name="docusaurus_locale" content="pt-br"><meta data-rh="true" name="docsearch:language" content="pt-br"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Circuítos com Registradores | O Bê-á-bá do FPGA"><meta data-rh="true" name="description" content="Grupo 8"><meta data-rh="true" property="og:description" content="Grupo 8"><link data-rh="true" rel="icon" href="/be-a-ba/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://de-abreu.github.io/be-a-ba/docs/logica-sequencial/circuitos-com-registradores"><link data-rh="true" rel="alternate" href="https://de-abreu.github.io/be-a-ba/docs/logica-sequencial/circuitos-com-registradores" hreflang="pt-br"><link data-rh="true" rel="alternate" href="https://de-abreu.github.io/be-a-ba/docs/logica-sequencial/circuitos-com-registradores" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/be-a-ba/blog/rss.xml" title="O Bê-á-bá do FPGA RSS Feed">
+<title data-rh="true">Circuitos com Registradores | O Bê-á-bá do FPGA</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://de-abreu.github.io/be-a-ba/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://de-abreu.github.io/be-a-ba/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://de-abreu.github.io/be-a-ba/docs/logica-sequencial/circuitos-com-registradores"><meta data-rh="true" property="og:locale" content="pt_br"><meta data-rh="true" name="docusaurus_locale" content="pt-br"><meta data-rh="true" name="docsearch:language" content="pt-br"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Circuitos com Registradores | O Bê-á-bá do FPGA"><meta data-rh="true" name="description" content="O que são Registradores?"><meta data-rh="true" property="og:description" content="O que são Registradores?"><link data-rh="true" rel="icon" href="/be-a-ba/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://de-abreu.github.io/be-a-ba/docs/logica-sequencial/circuitos-com-registradores"><link data-rh="true" rel="alternate" href="https://de-abreu.github.io/be-a-ba/docs/logica-sequencial/circuitos-com-registradores" hreflang="pt-br"><link data-rh="true" rel="alternate" href="https://de-abreu.github.io/be-a-ba/docs/logica-sequencial/circuitos-com-registradores" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/be-a-ba/blog/rss.xml" title="O Bê-á-bá do FPGA RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/be-a-ba/blog/atom.xml" title="O Bê-á-bá do FPGA Atom Feed">
 
 
 
 <link rel="stylesheet" href="/be-a-ba/katex/katex.min.css"><link rel="stylesheet" href="/be-a-ba/assets/css/styles.c9a4dc9b.css">
-<script src="/be-a-ba/assets/js/runtime~main.1d55f160.js" defer="defer"></script>
+<script src="/be-a-ba/assets/js/runtime~main.13ea7858.js" defer="defer"></script>
 <script src="/be-a-ba/assets/js/main.9f22ab0d.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
-<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Pular para o conteúdo principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Pular para o conteúdo principal</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Alternar a barra de navegação" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/be-a-ba/"><div class="navbar__logo"><img src="/be-a-ba/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/be-a-ba/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">O Bê-á-bá do FPGA</b></a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/sobre">Sobre</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/ambiente-de-trabalho">Ambiente de Trabalho</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/lógica-combinacional">Lógica Combinacional</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/lógica-sequencial">Lógica Sequencial</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/o-processador-digital">Processador Digital</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/bibliografia">Bibliografia</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/be-a-ba/blog">Blog</a><a href="https://github.com/de-abreu/be-a-ba" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Alterar entre os modos claro e escuro (modo modo claro ativado)" aria-label="Alterar entre os modos claro e escuro (modo modo claro ativado)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volte para o topo" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/sobre">Sobre</a><button aria-label="Expandir a categoria lateral &#x27;Sobre&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/ambiente-de-trabalho">Ambiente de Trabalho</a><button aria-label="Expandir a categoria lateral &#x27;Ambiente de Trabalho&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/lógica-combinacional">Lógica Combinacional</a><button aria-label="Expandir a categoria lateral &#x27;Lógica Combinacional&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/be-a-ba/docs/category/lógica-sequencial">Lógica Sequencial</a><button aria-label="Fechar a categoria lateral &#x27;Lógica Sequencial&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-sequencial/memoria">Memória Digital</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/be-a-ba/docs/logica-sequencial/circuitos-com-registradores">Circuítos com Registradores</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-sequencial/maquina-de-estados">Máquinas de Estados</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/o-processador-digital">O Processador Digital</a><button aria-label="Expandir a categoria lateral &#x27;O Processador Digital&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/be-a-ba/docs/bibliografia">Bibliografia</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Página Inicial" class="breadcrumbs__link" href="/be-a-ba/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/be-a-ba/docs/category/lógica-sequencial"><span itemprop="name">Lógica Sequencial</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Circuítos com Registradores</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Nessa página</button></div><div class="theme-doc-markdown markdown"><header><h1>Circuítos com Registradores</h1></header>
-<p>Grupo 8</p>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Pular para o conteúdo principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Pular para o conteúdo principal</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Alternar a barra de navegação" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/be-a-ba/"><div class="navbar__logo"><img src="/be-a-ba/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/be-a-ba/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">O Bê-á-bá do FPGA</b></a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/sobre">Sobre</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/ambiente-de-trabalho">Ambiente de Trabalho</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/lógica-combinacional">Lógica Combinacional</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/lógica-sequencial">Lógica Sequencial</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/category/o-processador-digital">Processador Digital</a><a class="navbar__item navbar__link" href="/be-a-ba/docs/bibliografia">Bibliografia</a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/be-a-ba/blog">Blog</a><a href="https://github.com/de-abreu/be-a-ba" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Alterar entre os modos claro e escuro (modo modo claro ativado)" aria-label="Alterar entre os modos claro e escuro (modo modo claro ativado)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volte para o topo" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/sobre">Sobre</a><button aria-label="Expandir a categoria lateral &#x27;Sobre&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/ambiente-de-trabalho">Ambiente de Trabalho</a><button aria-label="Expandir a categoria lateral &#x27;Ambiente de Trabalho&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/lógica-combinacional">Lógica Combinacional</a><button aria-label="Expandir a categoria lateral &#x27;Lógica Combinacional&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/be-a-ba/docs/category/lógica-sequencial">Lógica Sequencial</a><button aria-label="Fechar a categoria lateral &#x27;Lógica Sequencial&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-sequencial/memoria">Memória Digital</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/be-a-ba/docs/logica-sequencial/circuitos-com-registradores">Circuitos com Registradores</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/be-a-ba/docs/logica-sequencial/maquina-de-estados">Máquinas de Estados</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/be-a-ba/docs/category/o-processador-digital">O Processador Digital</a><button aria-label="Expandir a categoria lateral &#x27;O Processador Digital&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/be-a-ba/docs/bibliografia">Bibliografia</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Página Inicial" class="breadcrumbs__link" href="/be-a-ba/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/be-a-ba/docs/category/lógica-sequencial"><span itemprop="name">Lógica Sequencial</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Circuitos com Registradores</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Nessa página</button></div><div class="theme-doc-markdown markdown"><header><h1>Circuitos com Registradores</h1></header>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="o-que-são-registradores">O que são Registradores?<a href="#o-que-são-registradores" class="hash-link" aria-label="Link direto para O que são Registradores?" title="Link direto para O que são Registradores?">​</a></h2>
-<p>Registradores são conjuntos de flip-flops conectados de tal forma que armazenam n bits de informação, todos sincronizados por um clock comum. Eles funcionam como uma memória volátil, especialmente na unidade central de processamento (CPU), onde são utilizados durante a execução dos programas. Apesar de serem rápidos, possuem uma capacidade de armazenamento muito limitada.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="registradores-shift">Registradores Shift:<a href="#registradores-shift" class="hash-link" aria-label="Link direto para Registradores Shift:" title="Link direto para Registradores Shift:">​</a></h2>
-<p>Em registradores shift, os valores armazenados em sequência são deslocados, fazendo com que o valor de cada flip-flop seja &quot;empurrado&quot; para o próximo. Esse deslocamento pode multiplicar ou dividir um número binário por 2 a cada pulso de clock, pois os valores avançam a cada subida do clock.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="acesso-paralelo">Acesso Paralelo:<a href="#acesso-paralelo" class="hash-link" aria-label="Link direto para Acesso Paralelo:" title="Link direto para Acesso Paralelo:">​</a></h2>
-<p>Em muitas aplicações, é necessário transferir dados de n bits. Isso pode ser feito de duas maneiras principais: transferência paralela ou transferência serial.</p>
-<ul>
-<li><strong>Transferência Paralela:</strong> Todos os bits são transferidos ao mesmo tempo, em um único pulso de clock, mas isso requer n fios, um para cada bit.</li>
-<li><strong>Transferência Serial:</strong> Alternativamente, podemos usar apenas um fio para enviar os bits um a um, usando um registrador shift. Esse método leva n ciclos de clock para transferir todos os bits, mas reduz a quantidade de fios necessários.</li>
-</ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="exercícios">Exercícios:<a href="#exercícios" class="hash-link" aria-label="Link direto para Exercícios:" title="Link direto para Exercícios:">​</a></h2>
+<p>Registradores são componentes fundamentais na lógica digital, usados para armazenar temporariamente um conjunto de bits. Eles são formados por um agrupamento de flip-flops, geralmente do tipo D (Data), que permitem o armazenamento de <strong>n</strong> bits de dados simultaneamente.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="relembrando-o-flip-flop-tipo-d">Relembrando o Flip-Flop Tipo D<a href="#relembrando-o-flip-flop-tipo-d" class="hash-link" aria-label="Link direto para Relembrando o Flip-Flop Tipo D" title="Link direto para Relembrando o Flip-Flop Tipo D">​</a></h3>
+<p>Antes de explorarmos o funcionamento de registradores, é importante relembrar a respeito do Flip-Flop do tipo D. Este componente armazena o valor presente na entrada de dados (<strong>D</strong>) na borda ativa do sinal de clock, mantendo o dado armazenado até que ocorra a próxima borda.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="funcionamento">Funcionamento<a href="#funcionamento" class="hash-link" aria-label="Link direto para Funcionamento" title="Link direto para Funcionamento">​</a></h4>
 <ol>
-<li>
-<p>Considere a sequência 0101 em um registrador de 4 bits. Depois de 2 deslocamentos para a direita, qual será a sequência?</p>
-</li>
-<li>
-<p>Um sistema precisa transferir 16 bits de informações. Quantos fios serão necessários para fazer isso de forma paralela? e de forma serial?</p>
-</li>
-<li>
-<p>Faça um registrador de 4 bits utilizando flip-flops do tipo D.</p>
-</li>
-<li>
-<p>Algebricamente o que ocorre com um número ao deslocarmos ele para a esquerda? e para a direita?</p>
+<li><strong>Bordas de subida e descida do clock:</strong>
+<ul>
+<li>O flip-flop tipo D opera na transição do sinal de clock. Ele pode operar na borda de subida (0 → 1), sendo chamado de <em>positive-edge-trggered</em> ou, quando funciona na borda de descida (1 → 0), é chamado de <em>negative-edge-triggered</em>.</li>
+</ul>
 </li>
 </ol>
+<p><img decoding="async" loading="lazy" src="https://d2nchlq0f2u6vy.cloudfront.net/20/03/15/60ffc0fe98872100c981d6629540ce2d/dac6a03b9dddc5699e3b08aedf793faa/image_scan.png" alt="" class="img_ev3q"></p>
+<blockquote>
+<p>Flip-flop do tipo D com de borda de descida</p>
+</blockquote>
+<p><img decoding="async" loading="lazy" src="https://gotolasopa900.weebly.com/uploads/1/2/5/5/125523448/169554668.gif" alt="" class="img_ev3q"></p>
+<blockquote>
+<p>Flip-flop do tipo D com clear e preset com borda de subida</p>
+</blockquote>
+<ol start="2">
+<li><strong>Gráfico de Tempo:</strong>
+O diagrama de tempo mostra a relação entre o clock, entradas e saídas ao longo do tempo.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="https://www.build-electronic-circuits.com/wp-content/uploads/2022/11/clock-4-500x312.png" alt="" class="img_ev3q"></p>
+<blockquote>
+<p>Gráfico de tempo do flip flop D com borda de subida</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="registradores-nada-mais-do-que-vários-flip-flops">Registradores: Nada mais do que vários Flip-Flops<a href="#registradores-nada-mais-do-que-vários-flip-flops" class="hash-link" aria-label="Link direto para Registradores: Nada mais do que vários Flip-Flops" title="Link direto para Registradores: Nada mais do que vários Flip-Flops">​</a></h3>
+<p>Um registrador é, essencialmente, um conjunto de flip-flops que, diferentemente dos flip-flops, estão organizados de modo a armazenar múltiplos bits de dados simultaneamente. Isso é feito em resposta às bordas do clock. Para um maior controle sobre isso, é comum que os registradores tenham um <em>enable</em> para ativar o registro.</p>
+<p>Os registradores, portanto, desempenham um papel crucial no design de circuitos digitais, viabilizando o armazenamento e a manipulação eficiente de dados em diversos contextos tecnológico como armazenamento de operandos e resultados algébricos, armazenamento de localizações de memória, armazenamento de sinais de controle, etc.</p>
+<p><img decoding="async" loading="lazy" src="https://www.newtoncbraga.com.br/images/stories/artigo2019/cur5011_0009.png" alt="" class="img_ev3q"></p>
+<blockquote>
+<p>Exemplo de registrador a partir de Flip-Flops tipo D</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="transferências-paralela-e-serial">Transferências paralela e serial:<a href="#transferências-paralela-e-serial" class="hash-link" aria-label="Link direto para Transferências paralela e serial:" title="Link direto para Transferências paralela e serial:">​</a></h2>
+<p>As transferências de entrada ou de saída podem ser de forma paralela ou serial. Isso depende de como os dados se comportam. Se vários dados podem ser inseridos ao mesmo tempo tempos uma entrada paralela e se temos apenas um fio para inserir vários dados temos uma entrada em série.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="transferência-paralela">Transferência paralela:<a href="#transferência-paralela" class="hash-link" aria-label="Link direto para Transferência paralela:" title="Link direto para Transferência paralela:">​</a></h3>
+<p>Todos os bits são transferidos ao mesmo tempo. Embora esse método seja muito rápido acabamos usando muitos fios (um para cada bit).</p>
+<p><img decoding="async" loading="lazy" src="https://www.electronics-tutorials.ws/wp-content/uploads/2018/05/sequential-seq24.gif" alt="" class="img_ev3q"></p>
+<blockquote>
+<p>Registrador shift com paralel-in paralel-out</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="transferência-serial">Transferência serial:<a href="#transferência-serial" class="hash-link" aria-label="Link direto para Transferência serial:" title="Link direto para Transferência serial:">​</a></h3>
+<p>Os bits são enviados um por vez utilizando apenas um fio economizando fios, mas levando mais tempo já que precisamos de n ciclos de clock para realizar a operação</p>
+<p><img decoding="async" loading="lazy" src="https://www.electronics-tutorials.ws/wp-content/uploads/2018/05/sequential-seq22.gif" alt="" class="img_ev3q"></p>
+<blockquote>
+<p>Registrador shift com serial-in serial-out</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="resumo-e-comparação">Resumo e comparação:<a href="#resumo-e-comparação" class="hash-link" aria-label="Link direto para Resumo e comparação:" title="Link direto para Resumo e comparação:">​</a></h3>
+<ul>
+<li><strong>Paralela:</strong> Alta velocidade, mas com maior custo.</li>
+<li><strong>Serial:</strong> Menor custo, mas é mais lenta.
+<strong>OBS:</strong> Trazendo isso para a realidade, é válido postular que a transferência serial é necessária em certas aplicações, como comunicação de longa distância, devido à limitação física de conexões, enquanto a paralela é limitada a curtas distâncias, pela maior suscetibilidade ao ruído e atenuação.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="registradores-shift">Registradores shift:<a href="#registradores-shift" class="hash-link" aria-label="Link direto para Registradores shift:" title="Link direto para Registradores shift:">​</a></h3>
+<p>Um numero de n bits é multiplicado por 2 se seus digitos são movidos para a direita e dividido por dois se seus digitos são movidos para a esquerda. Tendo isso em mente, existe um circuito capaz de realizar essa operação: O registrador shift.</p>
+<p>A figura (a) exibe um exemplo de registrador shift formado por 4 flip-flops do tipo D encadeados. note que todos eles possuem um clock em comum e que a entrada D do próximo é a saída Q do anterior. Note também que temos apenas um fio de Data para iserir dados. O conteúdo de cada flip-flop é transferido para o próximo.</p>
+<p>Os registradores shift movem os bits armazenados para a esquerda ou direita. Esse deslocamento ocorre de forma sincronizada com o clock, transferindo o valor de cada flip-flop para o anterior ou próximo. Esse comportamento é útil em operações como multiplicação e divisão por potências de 2.</p>
+<p><img decoding="async" loading="lazy" src="https://www.electricalelibrary.com/wp-content/uploads/2021/02/shift_register.jpg" alt="" class="img_ev3q"></p>
+<blockquote>
+<p>Exemplo de um Registrador shift de 4 bits</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="tipos-de-shift">Tipos de shift:<a href="#tipos-de-shift" class="hash-link" aria-label="Link direto para Tipos de shift:" title="Link direto para Tipos de shift:">​</a></h3>
+<p>Pensando em números que ficam armazenas em binário nos registradores, os registradores de shift são alternativas viáveis para fazer operações simples de divisão e multiplicação em potências de dois.</p>
+<ul>
+<li><strong>Shift para a Esquerda:</strong> multiplica o número por 2.</li>
+<li><strong>Shift para a Direita:</strong> divide o número por 2.
+É necessário lembrar que pode ser desejado extender o sinal, visto que o bit mais significativo será
+perdido ao deslocar os bits à esquerda, e o bit menos significativo será perdido ao deslocar o
+conteúdo à direita.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="exercícios-resolvidos">Exercícios resolvidos<a href="#exercícios-resolvidos" class="hash-link" aria-label="Link direto para Exercícios resolvidos" title="Link direto para Exercícios resolvidos">​</a></h3>
+<ol>
+<li>Projete um circuito que possa ser utilizado para controlar uma máquina de vendas automática. O circuito possui cinco entradas: Q (moeda de 25 centavos), D (moeda de 10 centavos), N (moeda de 5 centavos), Coin, e Resetn. Quando uma moeda é depositada na máquina, um mecanismo de detecção de moedas gera um pulso na entrada correspondente (Q, D ou N). Para indicar a ocorrência do evento, o mecanismo também gera um pulso na linha Coin.</li>
+</ol>
+<p>O circuito é reiniciado usando o sinal Resetn (ativo em nível baixo). Quando pelo menos 30 centavos são depositados, o circuito ativa sua saída, Z. Não é fornecido troco caso o valor depositado exceda 30 centavos.</p>
+<p>Projete o circuito necessário utilizando os seguintes componentes:</p>
+<ul>
+<li>Um somador de seis bits;</li>
+<li>Um registrador de seis bits;</li>
+<li>Qualquer número de portas AND, OR e NOT.</li>
+</ul>
+<p><strong>Resolução</strong></p>
+<p><img decoding="async" loading="lazy" src="https://i.imgur.com/croQhCC.png" alt="" class="img_ev3q"></p>
+<blockquote>
+<p>Exemplo da máquina de vendas automática.</p>
+</blockquote>
+<p>A figura acima (Fundamentals of Digital Logic with Verilog Design, THIRD EDITION) apresenta um circuito possível para implementar o controle de uma máquina de vendas automática. Vamos detalhar o funcionamento:</p>
+<p>Cada tipo de moeda (N, D, Q) é representado por um número de cinco bits. Estes valores correspondem a:</p>
+<ul>
+<li>N (5 centavos): Representado como 00005.</li>
+<li>D (10 centavos): Representado como 001010.</li>
+<li>Q (25 centavos): Representado como 011001.
+Quando uma moeda é depositada, o mecanismo de detecção gera um pulso na linha correspondente (N, D ou Q) e na linha Coin.
+Os valores das moedas são somados ao valor total atual armazenado no registrador S.
+O resultado da soma é atualizado no registrador após a borda negativa do sinal Coin.
+O registrador S mantém o total acumulado das moedas depositadas e é atualizado a cada pulso na linha Coin, garantindo que a soma tenha sido processada corretamente pelo somador antes de ser armazenada.
+A atualização é sincronizada com a borda negativa do sinal Coin, o que permite o tempo necessário para a propagação do somador e evita erros.
+O sinal Resetn (ativo baixo) é usado para reiniciar o circuito, zerando o registrador S.
+Saída do Circuito (Z):</li>
+</ul>
+<p>A saída Z é ativada (em nível alto) quando o total acumulado é de 30 centavos ou mais.
+Sabendo que 30 e 31 em binário são, respectivamente, 011110 e 011111, a condição para Z é dada pela fórmula:
+Z = S5 + (S4 . S3 . S2. S1)</p>
+<p>O registrador é atualizado na borda negativa do sinal Coin. Esse comportamento garante que o somador tenha tempo suficiente para calcular o novo total antes que ele seja armazenado no registrador.
+Assim, evita inconsistências ou erros devido a atrasos de propagação.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="exercícios-conceituais">Exercícios conceituais:<a href="#exercícios-conceituais" class="hash-link" aria-label="Link direto para Exercícios conceituais:" title="Link direto para Exercícios conceituais:">​</a></h2>
+<ol>
+<li>
+<p>Considere a sequência 0100 em um registrador de 4 bits. Depois de 2 deslocamentos para a direita, qual será a sequência?</p>
+</li>
+<li>
+<p>Um sistema precisa transferir 16 bits de informações. Quantos fios serão necessários para fazer isso de forma paralela? E de forma serial?</p>
+</li>
+<li>
+<p>Desenhe um registrador de 4 bits utilizando flip-flops do tipo D.</p>
+</li>
+<li>
+<p>O que acontece com um número em binário, ao deslocá-lo por meio de um shift register para a esquerda? E para a direita?</p>
+</li>
+</ol>
+<hr>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="respostas">Respostas:<a href="#respostas" class="hash-link" aria-label="Link direto para Respostas:" title="Link direto para Respostas:">​</a></h2>
 <ol>
+<li>R: <code>0010</code></li>
+<li>R: Paralela: 16 fios. Serial: 1 fio.</li>
+<li>R: O diagrama deve incluir 4 flip-flops D interconectados em série, com uma entrada de clock comum.</li>
+<li>R: Ao deslocar para a direita, dividimos o número por 2. Ao deslocar para a esquerda, multiplicamos por 2</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="propostas-para-implementação-na-fpga">Propostas para implementação na FPGA:<a href="#propostas-para-implementação-na-fpga" class="hash-link" aria-label="Link direto para Propostas para implementação na FPGA:" title="Link direto para Propostas para implementação na FPGA:">​</a></h2>
+<ol>
 <li>
-<p>r: <code>0001</code></p>
+<p>Faça a implementação de um registrador de borda de subida que recebe os inputs do usuário pelos Switches SW0 - SW7 e imprima o resultado recebido nos LEDs LED0 - LED7 da FPGA. Utilize o clock no botão.</p>
 </li>
 <li>
-<p>R: paralela: 16 fios, serial: 1 fio</p>
+<p>Faça a mesma implementação agora utilizando a borda de descida. Quais diferenças você notou?</p>
 </li>
 <li>
-<p>R:</p>
-</li>
-<li>
-<p>R: Ao deslocar para a direita dividimos o numero por 2 e ao deslocar para a esquerda, multiplicamos ele por 2.</p>
+<p>Implemente na FPGA de modo que se faça a soma de dois valores lidos pelos SW-0 e SW-7 e mostre o resultado nos LED&#x27;s.</p>
 </li>
 </ol>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Autores</div><div class="admonitionContent_BuS1"><ul>
+<h1>Contadores</h1>
+<p>Os contadores são circuitos digitais utilizados para realizar operações de incremento ou decremento de contagem por 1. Eles têm ampla aplicação em sistemas digitais, como contar eventos, gerar intervalos de temporização e acompanhar o tempo decorrido. Apesar de poderem ser implementados usando somadores/subtratores e registradores sua simplicidade de operação permite a utilização de circuitos mais básicos, como flip-flops do tipo T ou D, reduzindo custos e complexidade.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="contadores-assíncronos">Contadores assíncronos:<a href="#contadores-assíncronos" class="hash-link" aria-label="Link direto para Contadores assíncronos:" title="Link direto para Contadores assíncronos:">​</a></h3>
+<p>Os contadores assíncronos são uma das formas mais simples de contadores e utilizam flip-flops T devido à sua característica natural de alternar estados com os pulsos de clock. Cada flip-flop no contador é conectado em cascata:</p>
+<p><img decoding="async" loading="lazy" src="https://i.imgur.com/c7QjcT6.png" alt="" class="img_ev3q"></p>
+<blockquote>
+<p>Contador Assíncrono</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="limitações">Limitações<a href="#limitações" class="hash-link" aria-label="Link direto para Limitações" title="Link direto para Limitações"> ​</a></h4>
+<ul>
+<li>Por serem assíncronos, esses contadores sofrem com atrasos cumulativos, pois cada flip-flop depende da mudança do estado do anterior.</li>
+</ul>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="vantagens">Vantagens<a href="#vantagens" class="hash-link" aria-label="Link direto para Vantagens" title="Link direto para Vantagens">​</a></h4>
+<ul>
+<li>Os contadores assíncronos são simples, econômicos e úteis em aplicações onde atrasos cumulativos não são críticos, como em contagens de baixa velocidade. Para aplicações que exigem alta precisão ou operação em alta velocidade, contadores síncronos seriam mais apropriados.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="detecção-de-máximo">Detecção de Máximo<a href="#detecção-de-máximo" class="hash-link" aria-label="Link direto para Detecção de Máximo" title="Link direto para Detecção de Máximo">​</a></h3>
+<ul>
+<li>Para identificar quando o contador atinge seu valor máximo (todos os bits em 1), um <strong>gate AND</strong> pode ser utilizado.</li>
+<li>Essa detecção é útil, por exemplo, para concatenar vários contadores ou reiniciar a contagem após atingir o valor limite. Assim nós formamos um contador com base no módulo de |n|.</li>
+</ul>
+<h1>Contadores síncronos</h1>
+<p>Os contadores assíncronos são simples, mas apresentam limitações de velocidade, especialmente quando o número de bits aumenta. Isso ocorre devido aos atrasos acumulados na propagação dos sinais no esquema de clock em cascata. Apesar de ainda haver atrasos relacionados ao tempo de propagação interno de cada flip-flop e da lógica combinacional associada, para superar essa limitação, utilizamos <strong>contadores síncronos</strong>, onde todos os flip-flops recebem o sinal de clock ao mesmo tempo.</p>
+<p><img decoding="async" loading="lazy" src="https://i.imgur.com/yUofqhq.png" alt="" class="img_ev3q"></p>
+<p>Mostraremos abaixo dois tipos de contadores práticos: o contador BCD e o contador em anel.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-contador-bcd">1. Contador BCD<a href="#1-contador-bcd" class="hash-link" aria-label="Link direto para 1. Contador BCD" title="Link direto para 1. Contador BCD">​</a></h2>
+<p>O <strong>contador BCD (Binary-Coded Decimal)</strong> conta em decimal (0 a 9) representado em binário.</p>
+<p><img decoding="async" loading="lazy" src="https://i.imgur.com/CiM2kE5.png" alt="" class="img_ev3q"></p>
+<ul>
+<li>
+<p><strong>Funcionamento</strong>:</p>
+<ul>
+<li>Cada dígito decimal é implementado como um contador módulo-10, a partir de lógica entre as saídas Q0 e Q3, que indicam o número 9, em binário.</li>
+<li>Após alcançar o número 9, os flip-flops são redefinidos para 0.</li>
+<li>Quando o primeiro dígito (BCD₀) chega a 9, ele habilita o segundo dígito (BCD₁) para incrementar.</li>
+</ul>
+</li>
+<li>
+<p><strong>Controle</strong>:</p>
+<ul>
+<li>Um sinal de controle <code>Clear</code> pode zerar o contador.</li>
+<li>A lógica garante que o próximo dígito só incrementa quando o anterior atinge 9.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-ring-counter">2. Ring counter<a href="#2-ring-counter" class="hash-link" aria-label="Link direto para 2. Ring counter" title="Link direto para 2. Ring counter">​</a></h2>
+<p>O <strong>ring counter</strong> utiliza um registro de deslocamento circular para gerar uma sequência única de códigos.</p>
+<p><img decoding="async" loading="lazy" src="https://i.imgur.com/jGKatqk.png" alt="" class="img_ev3q"></p>
+<blockquote>
+<p>Exemplo de contador ripple (assíncrono) de 4 bits</p>
+</blockquote>
+<ul>
+<li>
+<p><strong>Inicialização</strong>:</p>
+<ul>
+<li>Um sinal <code>Start</code> define o primeiro flip-flop como <code>1</code> e os demais como <code>0</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Funcionamento</strong>:</p>
+<ul>
+<li>À medida que novos clocks acontecem, os registradores shiftam em uma posição. Por exemplo, começa em:
+<code>1000</code>, <code>0100</code>, <code>0010</code>...</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="propostas-de-sugestão-de-implementação-na-fpga">Propostas de sugestão de implementação na FPGA:<a href="#propostas-de-sugestão-de-implementação-na-fpga" class="hash-link" aria-label="Link direto para Propostas de sugestão de implementação na FPGA:" title="Link direto para Propostas de sugestão de implementação na FPGA:">​</a></h2>
+<ol>
+<li>
+<p>Implemente um contador assíncrono e um contador síncrono na FPGA.</p>
+</li>
+<li>
+<p>Implemente um contador automático, ajustado ao clock da placa, de modo que a contagem seja atualizada a cada 1 segundo (Slow Counter).</p>
+</li>
+<li>
+<p>Implemente o BCD counter utilizando os displays de 7 segmentos.</p>
+</li>
+<li>
+<p>Implemente um Ring counter utilizando os LED&#x27;s da FPGA.</p>
+</li>
+</ol>
+<h1>Circuitos Sequenciais:</h1>
+<p>Circuitos sequenciais combinam lógica combinacional com elementos de armazenamento, como flip-flops, para processar informações que dependem tanto do <strong>passado</strong> quanto do <strong>presente</strong> dos sinais de entrada.</p>
+<p>Os <strong>registradores</strong> são usados em circuitos sequenciais para armazear informações de estados, assim, os circuitos sequenciais dependem da entrada e dos dados armazenados nos registradores e permitem manipular dados. Em circuitos sequenciais síncronos, um sinal de clock controla a mudança de estado dos flip-flops.</p>
+<p>Existem dois tipos principais de circuitos sequenciais:</p>
+<ul>
+<li><strong>Moore:</strong> Saídas dependem apenas do estado atual.</li>
+<li><strong>Mealy:</strong> Saídas dependem do estado atual e das entradas.</li>
+</ul>
+<p>Esses circuitos são fundamentais em sistemas digitais para memória e controle e trataremos dele nos próximos capítulos.</p>
+<hr>
+<ul>
 <li>Heitor Gomes de Oliveira - 15458350</li>
 <li>Dante Brito Lourenço - 15447326</li>
 <li>João Gabriel Pieroli da Silva - 15678578</li>
-</ul></div></div></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/de-abreu/be-a-ba/edit/main/website/docs/4-logica-sequencial/2-circuitos-com-registradores.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar essa página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Páginas de documentação"><a class="pagination-nav__link pagination-nav__link--prev" href="/be-a-ba/docs/logica-sequencial/memoria"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Memória Digital</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/be-a-ba/docs/logica-sequencial/maquina-de-estados"><div class="pagination-nav__sublabel">Próxima</div><div class="pagination-nav__label">Máquinas de Estados</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#o-que-são-registradores" class="table-of-contents__link toc-highlight">O que são Registradores?</a></li><li><a href="#registradores-shift" class="table-of-contents__link toc-highlight">Registradores Shift:</a></li><li><a href="#acesso-paralelo" class="table-of-contents__link toc-highlight">Acesso Paralelo:</a></li><li><a href="#exercícios" class="table-of-contents__link toc-highlight">Exercícios:</a></li><li><a href="#respostas" class="table-of-contents__link toc-highlight">Respostas:</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">CC-BY-SA 2024. Feito com Docusaurus.</div></div></div></footer></div>
+</ul>
+<p>Fontes:</p>
+<p>Fundamentals of Digital Logic with Verilog Design, Brown. S.</p>
+<p><a href="https://www.allaboutcircuits.com/textbook/digital/chpt-12/introduction-to-shift-registers/" target="_blank" rel="noopener noreferrer">https://www.allaboutcircuits.com/textbook/digital/chpt-12/introduction-to-shift-registers/</a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/de-abreu/be-a-ba/edit/main/website/docs/4-logica-sequencial/2-circuitos-com-registradores.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar essa página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Páginas de documentação"><a class="pagination-nav__link pagination-nav__link--prev" href="/be-a-ba/docs/logica-sequencial/memoria"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Memória Digital</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/be-a-ba/docs/logica-sequencial/maquina-de-estados"><div class="pagination-nav__sublabel">Próxima</div><div class="pagination-nav__label">Máquinas de Estados</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#o-que-são-registradores" class="table-of-contents__link toc-highlight">O que são Registradores?</a><ul><li><a href="#relembrando-o-flip-flop-tipo-d" class="table-of-contents__link toc-highlight">Relembrando o Flip-Flop Tipo D</a></li><li><a href="#registradores-nada-mais-do-que-vários-flip-flops" class="table-of-contents__link toc-highlight">Registradores: Nada mais do que vários Flip-Flops</a></li></ul></li><li><a href="#transferências-paralela-e-serial" class="table-of-contents__link toc-highlight">Transferências paralela e serial:</a><ul><li><a href="#transferência-paralela" class="table-of-contents__link toc-highlight">Transferência paralela:</a></li><li><a href="#transferência-serial" class="table-of-contents__link toc-highlight">Transferência serial:</a></li><li><a href="#resumo-e-comparação" class="table-of-contents__link toc-highlight">Resumo e comparação:</a></li><li><a href="#registradores-shift" class="table-of-contents__link toc-highlight">Registradores shift:</a></li><li><a href="#tipos-de-shift" class="table-of-contents__link toc-highlight">Tipos de shift:</a></li><li><a href="#exercícios-resolvidos" class="table-of-contents__link toc-highlight">Exercícios resolvidos</a></li></ul></li><li><a href="#exercícios-conceituais" class="table-of-contents__link toc-highlight">Exercícios conceituais:</a></li><li><a href="#respostas" class="table-of-contents__link toc-highlight">Respostas:</a></li><li><a href="#propostas-para-implementação-na-fpga" class="table-of-contents__link toc-highlight">Propostas para implementação na FPGA:</a><ul><li><a href="#contadores-assíncronos" class="table-of-contents__link toc-highlight">Contadores assíncronos:</a></li><li><a href="#detecção-de-máximo" class="table-of-contents__link toc-highlight">Detecção de Máximo</a></li></ul></li><li><a href="#1-contador-bcd" class="table-of-contents__link toc-highlight">1. Contador BCD</a></li><li><a href="#2-ring-counter" class="table-of-contents__link toc-highlight">2. Ring counter</a></li><li><a href="#propostas-de-sugestão-de-implementação-na-fpga" class="table-of-contents__link toc-highlight">Propostas de sugestão de implementação na FPGA:</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">CC-BY-SA 2024. Feito com Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
